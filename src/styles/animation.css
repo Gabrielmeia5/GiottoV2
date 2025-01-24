@@ -1,0 +1,74 @@
+.hiddenRtoL, .showRtoL,
+.hiddenLtoR, .showLtoR,
+.hiddenBtoT, .showBtoT,
+.hiddenTtoB, .showTtoB,
+.hiddenDiagonal, .showDiagonal {
+  transition: all var(--animation-duration, 0.7s);
+}
+
+/* Direita para Esquerda */
+.hiddenRtoL {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(100%);
+}
+.showRtoL {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+/* Esquerda para Direita   */
+.hiddenLtoR {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+}
+
+.showLtoR {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+/* Baixo para Cima   */
+.hiddenBtoT {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(100%);
+}
+
+.showBtoT {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+}
+
+/* Cima para Baixo   */
+.hiddenTtoB {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(-100%);
+}
+
+.showTtoB {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+}
+
+
+/* Diagonal Esquerda para Direita   */
+.hiddenDiagonal {
+  opacity: 0;
+  height: 130%;
+  width: 98%;
+  filter: blur(15px);
+}
+
+.showDiagonal {
+  opacity: 1;
+  filter: blur(0px);
+  height: 110%;
+  width: 78%;
+}

@@ -1,0 +1,30 @@
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+@import url('animation.css');
+
+
+
+
+:root {
+    --primary-color: #beacab;
+    --secondary-color: #cec1c0;
+    --tertiary-color: #d2b772;
+    --primary-color-bg: #202121;
+    --secondary-color-bg: #232525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color-bg);
+}
+
+  
