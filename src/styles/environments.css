@@ -1,6 +1,6 @@
-.about-container {
+.environments-container {
     background-color: var(--primary-color-bg);
-    min-height: 10vh;
+    min-height: 100vh;
     font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
 }   
 
-.about-content {
+.environments-content {
     background-color: var(--secondary-color-bg);
     width: 90%;
     padding: 1.5em 0.7em;
@@ -23,7 +23,7 @@
 
 }
 
-.border-about {
+.border-environments {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,8 +32,8 @@
     pointer-events: none; /* Evita interferência nos cliques do conteúdo */
 }
 
-.border-about::before,
-.border-about::after {
+.border-environments::before,
+.border-environments::after {
     content: "";
     position: absolute;
     width: 2.1em; /* Largura do fragmento */
@@ -43,7 +43,7 @@
 }
 
 /* Fragmento no canto superior esquerdo */
-.border-about::before {
+.border-environments::before {
     top: 0;
     left: 0;
     border-right: none; /* Remove borda direita */
@@ -51,7 +51,7 @@
 }
 
 /* Fragmento no canto inferior direito */
-.border-about::after {
+.border-environments::after {
     bottom: 0;
     right: 0;
     border-left: none; /* Remove borda esquerda */
@@ -59,7 +59,7 @@
 }
 
 
-.about-title {
+.environments-title {
     font-family: 'Great Vibes', serif;
     font-weight: 400;
     color: var(--primary-color);
@@ -67,7 +67,7 @@
     overflow-y: hidden;
 }
 
-.about-text {
+.environments-text {
     font-size: .8em;
     line-height: 1.5em;
     font-weight: 300;
@@ -75,7 +75,7 @@
     text-align: center;
 }
 
-.about-images {
+.environments-images {
     margin-top: 2em;
 }
 

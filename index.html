@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,7 +23,8 @@
             <span></span>
             <span></span>
         </label>
-        <nav id="navBarMobile">
+        <div class="blurNav"></div>
+        <nav id="navBarMobile" class="hiddenRtoL">
             <ul class="nav-list-mobile">
                 <li class="nav-item active">
                     <a href="#home">INÍCIO</a>
@@ -46,7 +48,7 @@
                     <a target="_blank" href="">RESERVA</a>
                 </li>
             </ul>
-            <div class="social-media-container">
+            <div class="social-media-container hiddenRtoL" data-animation-duration=".5s">
                 <a href="https://www.facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-f social-media-icon"></i>
                 </a>
@@ -62,15 +64,15 @@
     </header>
     <main class="main-container">
         <section id="home" class="home-container">
-            <img src="./src/assets/Logo circulo.webp" alt="Logo do Restaurante" class="logo-home">
-            <div data-animation-duration="1s" class="hiddenLtoR home-content">
-                <p class="home-subtitle">Restaurante Giotto</p>
-                <h1 class="home-title">Venha sentir o frescor da nossa cozinha <span>italiana</span></h1>
+            <img src="./src/assets/Logo circulo.webp" data-animation-duration=".8s" alt="Logo do Restaurante" class="hiddenBlur logo-home">
+            <div class="home-content">
+                <p data-animation-duration=".8s"  class="hiddenLtoR home-subtitle">Restaurante Giotto</p>
+                <h1 data-animation-duration="1s" class="hiddenLtoR home-title">Venha sentir o frescor da nossa cozinha <span>italiana</span></h1>
                 <a href="" class="home-menu-btn"><button>MENU</button></a>
             </div>
         </section>
         <section id="about" class="about-container">
-            <div class="about-content">
+            <div data-animation-duration=".8s" class="about-content hiddenLtoR">
                 <div class="border-about"></div>
                 <h2 class="about-title">Um pouco sobre nós</h2>
                 <p class="about-text">Inaugurado para apaixonados por gastronomia e
@@ -81,18 +83,57 @@
                     harmonização com excelentes vinhos, o restaurante é
                     um convite para apreciar o melhor da culinária em um
                     ambiente espetacular. <br>
-                    Aqui, a excelência vai além do prato: nossa equipe,
+                    <!-- <span >
+                        Aqui, a excelência vai além do prato: nossa equipe,
                     atenciosa e altamente qualificada, garante um serviço
-                    impecável, tornando cada visita memorável</p>
+                    impecável, tornando cada visita memorável
+                    </span>--></p> 
             </div>
 
 
-            <div class="about-images">
+            <div data-animation-duration=".8s" class="about-images hiddenRtoL">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide"><img src="./src/assets/apresentation.webp" alt="Imagem do Restaurante" class="about-image"></div>
                       <div class="swiper-slide"><img src="./src/assets/1.jpg" alt="Imagem do Restaurante" class="about-image"></div>
                       <div class="swiper-slide"><img src="./src/assets/2.jpg" alt="Imagem do Restaurante" class="about-image"></div>
+                    </div>
+                    <!-- Setas de navegação -->
+   
+                    <!-- Dots de navegação -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="./src/scripts/index.js" type="module" defer></script>
+        </section>
+
+        <section id="environments" class="environments-container">
+            <div data-animation-duration=".8s" class="environments-content hiddenLtoR">
+                <div class="border-environments"></div>
+                <h2 class="environments-title">Conheça nossos ambientes</h2>
+                <p class="environments-text">No Giotto Cucina e Vino, cada detalhe é pensado
+                    para proporcionar uma experiência única. Nossa
+                    atmosfera elegante e acolhedora combina
+                    perfeitamente com a gastronomia e os vinhos
+                    excepcionais que oferecemos.
+                    Com um menu elaborado para harmonizar sabores
+                    marcantes, e um atendimento impecável, tornamos
+                    cada visita memorável. Aqui, cada momento é uma
+                    celebração de excelência.
+                    Descubra um ambiente onde o melhor da culinária e
+                    enologia se encontra, transformando refeições em
+                    experiências extraordinárias.</p> 
+            </div>
+
+
+            <div data-animation-duration=".8s" class="environments-images hiddenRtoL">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./src/assets/apresentation.webp" alt="Imagem do Restaurante" class="environments-image"></div>
+                      <div class="swiper-slide"><img src="./src/assets/1.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
+                      <div class="swiper-slide"><img src="./src/assets/2.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
                     </div>
                     <!-- Setas de navegação -->
    

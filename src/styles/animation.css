@@ -2,33 +2,35 @@
 .hiddenLtoR, .showLtoR,
 .hiddenBtoT, .showBtoT,
 .hiddenTtoB, .showTtoB,
-.hiddenDiagonal, .showDiagonal {
-  transition: all var(--animation-duration, 0.7s);
+.hiddenDiagonal, .showDiagonal,
+.hiddenBlur, .showBlur {
+  transition: all var(--animation-duration, 0.7s) ease;
 }
+
 
 /* Direita para Esquerda */
 .hiddenRtoL {
   opacity: 0;
   filter: blur(15px);
-  transform: translateX(100%);
+  transform: translate3d(100px, 0, 0);
 }
 .showRtoL {
   opacity: 1;
   filter: blur(0px);
-  transform: translateX(0);
+  transform: translateZ(0);
 }
 
 /* Esquerda para Direita   */
 .hiddenLtoR {
   opacity: 0;
   filter: blur(15px);
-  transform: translateX(-100%);
+  transform: translate3d(-100px, 0, 0);
 }
 
 .showLtoR {
   opacity: 1;
   filter: blur(0px);
-  transform: translateX(0);
+  transform: translateZ(0);
 }
 
 /* Baixo para Cima   */
@@ -71,4 +73,15 @@
   filter: blur(0px);
   height: 110%;
   width: 78%;
+}
+
+
+.hiddenBlur {
+  opacity: 0;
+  filter: blur(15px);
+}
+
+.showBlur {
+  opacity: 1;
+  filter: blur(0px);
 }

@@ -1,15 +1,18 @@
 export const createObserver = (showClass) => 
   new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.intersectionRatio >= 0.4 ) {
         entry.target.classList.add(showClass);
       } else {
         entry.target.classList.remove(showClass);
       }
     });
+  }, {
+      threshold: 0.4
   });
 
 const animationMap = [
+  { selector: '.hiddenBlur', showClass: 'showBlur' },
   { selector: '.hiddenRtoL', showClass: 'showRtoL' },
   { selector: '.hiddenLtoR', showClass: 'showLtoR' },
   { selector: '.hiddenBtoT', showClass: 'showBtoT' },
