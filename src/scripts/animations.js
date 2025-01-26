@@ -1,14 +1,14 @@
 export const createObserver = (showClass) => 
   new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.intersectionRatio >= 0.4 ) {
+      if (entry.intersectionRatio >= 0.3 ) {
         entry.target.classList.add(showClass);
       } else {
         entry.target.classList.remove(showClass);
       }
     });
   }, {
-      threshold: 0.4
+      threshold: 0.3
   });
 
 const animationMap = [

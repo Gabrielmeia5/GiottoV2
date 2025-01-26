@@ -1,6 +1,6 @@
 .about-container {
     background-color: var(--primary-color-bg);
-    min-height: 10vh;
+    min-height: 100vh;
     font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,12 +15,12 @@
 .about-content {
     background-color: var(--secondary-color-bg);
     width: 90%;
-    padding: 1.5em 0.7em;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height: fit-content;
 }
 
 .border-about {
@@ -68,7 +68,7 @@
 }
 
 .about-text {
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.5em;
     font-weight: 300;
     margin-top: 1em;

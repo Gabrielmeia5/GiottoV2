@@ -11,6 +11,7 @@ document.getElementById("btn_mobile").addEventListener("change", (e) => {
 const swiper = new Swiper('.swiper', {
     loop: true,
     effect: 'fade',
+
     autoplay: {
       delay: 7000,
       disableOnInteraction: false,
@@ -26,7 +27,8 @@ const swiper = new Swiper('.swiper', {
   });
 
   const swiperSuggestion = new Swiper('.swiper-suggestions', {
-    loop: true,
+    loop: false,
+
     effect: 'fade',
     autoplay: {
       delay: 7000,
