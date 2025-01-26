@@ -81,7 +81,7 @@
 
 
 /*  =--------------------------= */
-.swiper {
+#about .swiper {
     display: flex;
     
     width: 80vw;

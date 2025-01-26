@@ -1,0 +1,152 @@
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em 0;
+}
+
+
+
+.suggestions-title {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 2em
+}
+
+.title-suggestion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.container-images-suggestions {
+    background-color: var(--secondary-color-bg);
+    width: 93vw;
+    height: 90vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.text-suggestion {
+    font-family: "Rubik", sans-serif;
+    width: 70vw;
+    margin-top: 2em;
+    font-size: .9rem;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+
+.swiper-suggestions {
+    display: flex;
+    margin-top: .5em;
+    width: 70vw;
+    border-radius: 1vw;
+    height: 60vw; /* Define a altura fixa para o container */
+    background-color: transparent; /* Fundo interno do container */
+ 
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    height: 100%; /* Ocupa 100% da altura do container */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Largura ajusta-se ao container */
+    height: 100%; /* Altura ajusta-se ao container */
+    object-fit: cover; /* Corta o excesso para preencher o espaço */
+  }
+
+  
+  .swiper-suggestions .swiper-button-prev,
+  .swiper-suggestions .swiper-button-next {
+    top: 40%;
+    color: white; /* Cor da seta */
+    background: transparent; /* Fundo branco semi-transparente */
+    border-radius: 50%; /* Torna a seta circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Posiciona as setas fora da imagem */
+  
+  
+  /* Adiciona transições suaves ao hover */
+  .swiper-suggestions .swiper-button-prev:hover,
+  .swiper-suggestions .swiper-button-next:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+  
+  }
+  
+  /* Remove o estilo padrão de botões grandes */
+  .swiper-suggestions .swiper-button-prev::after,
+  .swiper-suggestions .swiper-button-next::after {
+    font-size: 1em; /* Diminui o tamanho da seta padrão do Swiper */
+    font-weight: bold; /* Torna a seta mais visível */
+  }
+  
+  .swiper-suggestions .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+  }
+  
+  .swiper-suggestions .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  .swiper-suggestions .swiper-pagination {
+    top: 65vw !important; /* Ajuste o valor para a altura desejada             AJUSTAR MANUALMENTE RESPONSIVADAE */
+    z-index: 10; /* Garante que fique acima de outros elementos */
+}
+  
+
+
+
+
+
+
+  .styled-border {
+    position: relative;
+    width: 100%; /* Largura do elemento */
+    height: 1px; /* Altura do elemento */
+    background-color: transparent;
+
+  }
+  
+  .styled-border::before,
+  .styled-border::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Alinhadas no topo */
+    height: 1px; /* Altura da borda */
+    background-color: var(--primary-color);
+    width: 40%; /* Cada parte ocupa 30% do total */
+  }
+  
+  .styled-border::before {
+    left: 25%; /* Centraliza na metade esquerda */
+    transform: translateX(-50%);
+  }
+  
+  .styled-border::after {
+    right: 25%; /* Centraliza na metade direita */
+    transform: translateX(50%);
+  }
+  
