@@ -6,6 +6,7 @@
   position: relative; /* Para posicionamento relativo do pseudo-elemento */
   width: 100vw;
   scroll-margin-top: 100px;
+  overflow: hidden;
 }
 
 
@@ -183,6 +184,8 @@
 }
 
 .menu-tittle-content {
+  display: flex;
+  gap: 5px;
   overflow-y: hidden;
 }
 
@@ -233,5 +236,5 @@
 }
 
 .selected {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color) !important; 
 }
