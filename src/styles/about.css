@@ -60,11 +60,15 @@
 
 
 .about-title {
-    font-family: 'Great Vibes', serif;
-    font-weight: 400;
-    color: var(--primary-color);
-    font-size: 2rem;
-    overflow-y: hidden;
+  font-family: 'Great Vibes', serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  line-height: 1.2; /* Evita cortes verticais */
+  padding: 0.2em 0; /* Espaçamento interno */
+  overflow: visible; /* Impede cortes do conteúdo */
+  display: inline-block;
+  vertical-align: middle; /* Alinha corretamente */
 }
 
 .about-text {

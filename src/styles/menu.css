@@ -1,0 +1,237 @@
+/* Elemento Pai */
+.menu-container-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative; /* Para posicionamento relativo do pseudo-elemento */
+  width: 100vw;
+  scroll-margin-top: 100px;
+}
+
+
+.menu-container {
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.menu-container-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--secondary-color),
+    var(--secondary-color) 2px,
+    transparent 4px,
+    transparent 6px
+  );
+  z-index: 0; /* Garante que o pseudo-elemento fique atrás dos filhos */
+}
+
+.menu-content-container {
+  border-radius: 1vw;
+  width: 90vw;
+  background-color: var(--secondary-color-bg);
+  padding-bottom: 3em;
+  margin: 0 5vw;
+}
+
+
+.menu-container-section h2 {
+  text-align: center;
+  user-select: none;
+  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  padding-top: .5em;
+  margin-bottom: 1.2em;
+  overflow-y: hidden;
+}
+
+.menu-header {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+
+}
+
+.menu-header ul {
+  list-style: none;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.5em;
+  margin-left: .8em;
+  font-size: 1rem;
+  overflow-y: hidden;
+}
+
+
+
+.menu-header li {
+  display: block;
+  padding-left: 0.4em;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-header ul li {
+  cursor: pointer;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  justify-content: left;
+  text-wrap: nowrap;
+}
+
+.responsive-menu-header {
+  gap: 1em;
+  align-items: center;
+}
+
+.responsive-menu-header h2 {
+  margin-top: 1em;
+}
+
+.responsive-menu-tittle {
+  display: flex;
+  justify-content: center;
+  text-wrap: nowrap;
+  position: relative;
+}
+
+.text-menu-nav {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.icon-menu-nav {
+  margin-right: 0.1em;
+  font-size: 0.6rem;
+  user-select: none;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.checked {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  color: var(--secondary-color) !important;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 1em 0 2em 0.5em;
+  text-wrap: warp;
+}
+
+.menu-section:last-child {
+  margin-bottom: 0.5em;
+}
+
+.menu-section ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+  margin-top: 0.3em;
+  list-style-type: none;
+}
+
+.menu-item {
+  display: block;
+}
+
+.menu-item h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #fff;
+}
+
+.menu-item p {
+  font-size: 0.8rem;
+  color: #ccc;
+
+}
+
+.menu-item .price {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.menu-legend {
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+.menu-tittle-content {
+  overflow-y: hidden;
+}
+
+.btn-pdf-header {
+  display: flex;
+  margin: auto 0;
+}
+
+.menu-item h3,
+.menu-item p,
+.menu-legend {
+  word-wrap: break-word; /* Permite a quebra de palavras longas */
+  overflow-wrap: break-word; /* Compatibilidade adicional */
+  white-space: normal; /* Garante a quebra de linhas para conteúdo longo */
+  max-width: 90%; /* Garante que o conteúdo respeite o limite do container */
+}
+
+.menu-list {
+  margin-left: 0 !important;
+  padding-left: .2em !important;
+}
+
+#menuList li label {
+  cursor: pointer;
+}
+
+#menuList li input[type="checkbox"] {
+  display: none;
+}
+
+#menuList:last-child {
+  padding-bottom: 0;
+}
+
+/* Animações */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+#menuList li label i {
+  display: inline-block;
+  animation: keyframes-rotate 0.5s;
+}
+
+.selected {
+  border-bottom: 1px solid var(--secondary-color);
+}
