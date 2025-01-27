@@ -1,0 +1,393 @@
+.wine-list-container {
+    display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative; /* Para posicionamento relativo do pseudo-elemento */
+  width: 100vw;
+  scroll-margin-top: 100px;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+.wine-list-content {
+  border-radius: 1vw;
+  width: 90vw;
+  background-color: var(--secondary-color-bg);
+  padding-bottom: 1em;
+  margin: 0 5vw;
+  position: relative;
+}
+
+
+.wine-list-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(
+      0deg,
+      var(--secondary-color),
+      var(--secondary-color) 2px,
+      transparent 4px,
+      transparent 6px
+    );
+    z-index: 0; /* Garante que o pseudo-elemento fique atrás dos filhos */
+  }
+
+.wine-list-header {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.wine-list-header ul li {
+  cursor: pointer;
+}
+
+.wine-list-tittle {
+    text-align: center;
+  user-select: none;
+  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  padding-top: .5em;
+  margin-bottom: 1.2em;
+  overflow-y: hidden;
+}
+
+.wine-list-header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 0.5em;
+  position: relative;
+  font-size: 1rem;
+}
+
+.wine-list-header li {
+  display: inline;
+  border-bottom: 2px solid transparent;
+}
+
+.wine-list-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+
+
+
+#wineListNav .selectedWineList {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+
+
+
+.responsive-wine-header button {
+  width: fit-content !important;
+}
+.responsive-wine-header h2 {
+  margin-bottom: 0.2em !important;
+}
+
+#wine {
+  color: white;
+}
+
+.text-wine-nav {
+  cursor: pointer;
+}
+
+.text-wine-nav {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.text-sub-wine-nav {
+  cursor: pointer;
+}
+
+
+
+.sub-wine-list-nav li {
+  display: inline;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+.sub-wine-list-nav .selectSubNavWineList {
+  font-weight: 700;
+  color: var(--primary-color);
+
+}
+
+
+.icon-sub-wine-nav {
+  display: none;
+}
+
+#wineListNav .hiddenLtoR {
+  transition: 0;
+  filter: blur(0px);
+}
+
+#wineList {
+  padding-bottom: 0;
+  min-height: 0;
+  margin: 6em 0;
+}
+#wineListNav {
+  flex-direction: column;
+  gap: 1em;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0.5em;
+  position: relative;
+}
+
+.wine-list-header li {
+  display: block;
+  padding-left: 0.4em;
+}
+
+.wine-list-header ul::after {
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--primary-color),
+    var(--primary-color) 4px,
+    transparent 6px,
+    transparent 8px
+  );
+}
+
+.wine-list-nav {
+  display: flex;
+  text-wrap: warp;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1em;
+  max-width: 100%;
+  text-wrap: warp;
+  margin-bottom: 2em;
+}
+
+.sub-wine-list-nav .checked i {
+    color: var(--primary-color);
+
+}
+
+#wineListNav li input[type="checkbox"] {
+  display: none;
+}
+
+.icon-wine-nav {
+margin-right: 0.1em;
+  font-size: 0.6rem;
+  user-select: none;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.text-wine-nav {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sub-wine-list-nav {
+  margin-left: 0.5em;
+  flex-direction: column;
+  border-left: 1px solid var(--primary-color);
+  border-bottom: none;
+  gap: 0;
+  color: var(--primary-color);
+  margin-top: 1.5em;
+  list-style: none;
+  padding: 0.5em 0.5em 0 0.5em;
+  font-size: 1rem;
+  user-select: none;
+  text-wrap: nowrap;
+  position: relative;
+  max-width: 100%;
+}
+
+.sub-wine-list-nav::after {
+  display: none;
+}
+
+.icon-sub-wine-nav {
+  margin-right: 0.1em;
+  font-size: 0.7rem;
+  user-select: none;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.text-sub-wine-nav {
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.table-sub-nav-full {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 1em;
+  overflow-x: auto;
+  position: relative;
+  margin-left: 0.2em;
+  bottom: 1em;
+  text-wrap: nowrap;
+}
+
+.table-sub-nav-full thead th {
+  text-align: center; /* Alinha o conteúdo ao centro */
+  padding: 12px 4px;
+  font-size: 0.8rem;
+  width: 25%; /* Defina a largura desejada para cada coluna */
+}
+
+
+
+.table-sub-nav-full tbody td {
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  padding: 12px 8px;
+  font-size: 0.8rem;
+  width: 25%; /* Defina a largura desejada para cada coluna */
+}
+
+.table-sub-nav-full thead {
+  top: 0;
+  z-index: 1;
+}
+
+.table-sub-nav-full tbody td {
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.table-sub-nav-full h3 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.table-sub-nav-full p {
+  margin: 4px 0 0;
+  font-size: 0.7rem;
+}
+
+.table-sub-nav-full .price {
+  font-size: 0.7rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.table-sub-nav {
+    width: 100%;
+    table-layout: fixed; /* Atenção */
+    border-collapse: collapse;
+    margin: 0;
+    margin-top: 1em;
+    overflow-x: hidden;
+    position: relative;
+    right: 0.5em;
+    color: white;
+    bottom: 1em;
+    box-sizing: border-box;
+  }
+  
+  .table-sub-nav thead th {
+    text-align: center; /* Alinha o conteúdo ao centro */
+    padding: 12px 4px;
+    
+    font-size: 0.75rem;
+  }
+
+  .table-sub-nav thead tr {
+    width: 100%;
+  }
+ 
+.table-sub-nav thead tr th:first-child {
+    width: 50%;
+}
+
+.table-sub-nav thead tr th:not(:first-child) {
+    width: 25%;
+}
+
+.table-sub-nav tbody td {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    padding: 12px 8px;
+    font-size: 0.75rem;
+    width: 25%; /* Defina a largura desejada para as outras colunas */
+}
+
+.table-sub-nav tbody tr td:first-child {
+    width: 50% !important; /* Defina a largura desejada para a primeira coluna */
+}
+
+.table-sub-nav thead {
+  top: 0;
+  z-index: 1;
+}
+
+.table-sub-nav tbody td {
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.table-sub-nav h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  word-wrap: break-word; /* Quebra de palavras longas */
+}
+
+.table-sub-nav p {
+  margin: 4px 0 0;
+  font-size: .8rem;
+}
+
+
+.table-sub-nav .price {
+  font-size: .6rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.wine-list-container h3,
+.wine-list-container p {
+     display: flex;
+  word-wrap: break-word; /* Permite a quebra de palavras longas */
+  overflow-wrap: break-word; /* Compatibilidade adicional */
+  white-space: normal; /* Garante a quebra de linhas para conteúdo longo */
+  text-overflow: ellipsis; /* Adiciona reticências caso necessário */
+ max-width: 100%;
+}
+
+
+.table-sub-nav th,
+.table-sub-nav td {
+  word-break: break-word; /* Garante que palavras sejam quebradas */
+  overflow: hidden; /* Esconde o conteúdo que exceder o limite */
+  text-overflow: ellipsis; /* Adiciona reticências caso necessário */
+}
