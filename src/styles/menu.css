@@ -36,7 +36,7 @@
   border-radius: 1vw;
   width: 90vw;
   background-color: var(--secondary-color-bg);
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   margin: 0 5vw;
 }
 
@@ -49,7 +49,7 @@
   color: var(--primary-color);
   font-size: 2.5rem;
   padding-top: .5em;
-  margin-bottom: 1.2em;
+  margin-bottom: .5em;
   overflow-y: hidden;
 }
 
@@ -237,4 +237,33 @@
 
 .selected {
   border-bottom: 1px solid var(--secondary-color) !important; 
+}
+
+
+.menu-button-mobile-container {
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.menu-btn-mobile {
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: 200;
+  border-radius: .5vw;
+  padding: 0.3em 1.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1em 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-btn-mobile span {
+  font-size: .6rem;
 }
