@@ -81,5 +81,110 @@
   margin-top: 2em;
 }
 
-/* ======= Swiper Styles ======= */
 
+
+@media screen and (max-width: 386px) {
+  /* Mobile (pequenos smartphones e celulares antigos) */
+}
+
+@media screen and (min-width: 387px) and (max-width: 575px) {
+  /* Mobile (Smartphones pequenos) */
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* Tablets */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #environments .swiper {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    /* ======= General Styles ======= */
+.environments-container {
+  min-height: 20vh;
+  flex-direction: row;
+  padding-bottom: 5em;
+  gap: 2em;
+}
+
+.environments-content {
+  height: auto;
+  width: 50%;
+  padding: 2em 3em;
+}
+.environments-images {
+  height: 40vw;
+  width: 40vw;
+}
+
+#environments .swiper {
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+  background-color: transparent;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper .swiper-pagination {
+  bottom: 4% !important;
+  z-index: 10;
+}
+
+#environments .swiper-wrapper {
+  height: 85%;
+  width: 85% !important;
+}
+
+#environments .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#environments .swiper .swiper-button-prev,
+#environments .swiper .swiper-button-next {
+  color: white;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: none;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  transform: scale(1.1);
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+    
+}
+
+@media screen and (min-width: 1350px) {
+  .environments-content {
+    width: 30%;
+  }
+
+  .environments-title {
+    font-size: 2.8rem;
+  }
+
+  .environments-text {
+    font-size: 1.2rem;
+  }
+}

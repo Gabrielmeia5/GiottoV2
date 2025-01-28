@@ -4,30 +4,27 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
     width: 100vw;
     height: 100vh;
-    background: url("../assets/background.jpg");
-    background-attachment: fixed;
-    background-size: auto 100%; /* Ajusta a altura para 100%, sem distorcer a proporção */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    background-position: center; /* Centraliza a imagem horizontalmente */
+    background: url("../assets/background.jpg") center/cover no-repeat fixed;
+}
 
+.container-logo-desktop {
+    display: none;
 }
 
 .home-container::before {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-.logo-home {
+.logo-home-mobile {
     position: absolute;
     top: 1em;
     left: 1em;
@@ -37,7 +34,6 @@
 
 .home-content {
     z-index: 2;
-
     display: flex;
     margin-left: 1em;
     flex-direction: column;
@@ -62,7 +58,6 @@
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-
 .home-menu-btn {
     display: flex;
     width: fit-content;
@@ -80,10 +75,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 1;
-  }
-  
+}
 
 .home-menu-btn button {
     z-index: 2;
@@ -94,4 +88,123 @@
     font-size: 1rem;
     font-weight: 600;
     padding: 1em 1.5em;
+}
+
+.br-desktop {
+    content: '';
+}
+
+@media screen and (max-width: 386px) {
+    /* Mobile (pequenos smartphones e celulares antigos) */
+}
+
+@media screen and (min-width: 387px) and (max-width: 575px) {
+    /* Mobile (Smartphones pequenos) */
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Tablets pequenos */
+    .logo-home {
+        top: 2em;
+        left: 2em;
+        width: 6em;
+    }
+    .home-content {
+        margin-top: 5em;
+    }
+    .home-title {
+        font-size: 3rem;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablets e dispositivos médios */
+    .logo-home {
+        top: 2em;
+        left: 2em;
+        width: 6em;
+    }
+    .home-content {
+        margin-top: 5em;
+        margin-left: 4em;
+    }
+    .home-title {
+        font-size: 3rem;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Desktop padrão */
+    .home-container {
+        justify-content: start;
+        padding-top: 5em;
+        flex-direction: column;
+    }
+    .logo-home-mobile {
+        display: none;
+    }
+    .container-logo-desktop {
+        background-color: var(--primary-color);
+        z-index: 9;
+        border-radius: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .1em 0;
+        width: 6em;
+        margin-bottom: 5vw;
+    }
+    .home-content {
+        width: 50vw;
+        margin-top: 6vw;
+        margin-left: 0;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-home-content {
+        min-width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-title {
+        font-size: 3rem;
+        font-weight: 300;
+        margin: 0;
+        width: 100%;
+    }
+    .home-subtitle {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .home-menu-btn {
+        display: none;
+    }
+    .header-mobile {
+        display: none !important;
+    }
+    .header-desktop {
+        display: flex;
+        border-bottom: 2px solid var(--primary-color);
+        z-index: 99;
+        margin-bottom: 0;
+    }
+    .nav-list-desktop {
+        display: flex;
+        gap: 1em;
+    }
+    .nav-list-desktop a {
+        text-decoration: none !important;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .br-desktop {
+        all: unset;
+    }
 }

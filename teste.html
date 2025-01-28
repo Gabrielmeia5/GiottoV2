@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiperJS - Custom Centered Slides</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #1e1e2f;
+      font-family: Arial, sans-serif;
+    }
+    .swiper {
+      width: 80%;
+      max-width: 800px;
+      height: 400px;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-slide-active {
+      transform: scale(1.1); /* Dá um destaque à imagem central */
+      opacity: 1; /* Imagem central completamente visível */
+    }
+    .swiper-slide-next,
+    .swiper-slide-prev {
+      opacity: 0.2; /* Imagens laterais meio transparentes */
+      transform: scale(0.9); /* Imagens laterais levemente menores */
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container-infos">
+            <div class="tittle-content-container">
+                <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
+                <div class="styled-border"></div>
+            </div>
+            <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+            <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
+                sal, legumes levemente tostados, alho confit e nosso
+                cremoso e aveludado Aligot
+            </p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="container-infos">
+            <div class="tittle-content-container">
+                <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
+                <div class="styled-border"></div>
+            </div>
+            <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+            <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
+                sal, legumes levemente tostados, alho confit e nosso
+                cremoso e aveludado Aligot
+            </p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="container-infos">
+            <div class="tittle-content-container">
+                <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
+                <div class="styled-border"></div>
+            </div>
+            <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+            <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
+                sal, legumes levemente tostados, alho confit e nosso
+                cremoso e aveludado Aligot
+            </p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="container-infos">
+            <div class="tittle-content-container">
+                <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
+                <div class="styled-border"></div>
+            </div>
+            <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+            <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
+                sal, legumes levemente tostados, alho confit e nosso
+                cremoso e aveludado Aligot
+            </p>
+        </div>
+    </div>
+      
+
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      grabCursor: true,
+      centeredSlides: true,
+      effect: 'coverFlow',
+      slidesPerView: 3, // Mostra 3 slides (um no centro e dois nas laterais)
+      loop: true, // Ativa o loop infinito
+      spaceBetween: 30, // Espaçamento entre os slides
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slideActiveClass: 'swiper-slide-active', // Classe para o slide ativo
+      slideNextClass: 'swiper-slide-next', // Classe para o próximo slide
+      slidePrevClass: 'swiper-slide-prev', // Classe para o slide anterior
+    });
+  </script>
+</body>
+</html>

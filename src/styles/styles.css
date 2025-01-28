@@ -45,13 +45,13 @@ body {
 }
 
 .swiper-slide {
-    opacity: 0 !important; /* Torna o slide invisível */
+
     pointer-events: none !important; /* Desativa a interação com o slide */
     transition: opacity 0.3s ease !important; /* Suaviza a transição */
   }
   
   .swiper-slide-active {
-    opacity: 1 !important; /* Torna o slide ativo visível */
+
     pointer-events: auto !important; 
   }
 

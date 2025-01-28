@@ -64,10 +64,34 @@
     </header>
     <main class="main-container">
         <section id="home" class="home-container">
-            <img src="./src/assets/Logo circulo.webp" data-animation-duration=".8s" alt="Logo do Restaurante" class="hiddenBlur logo-home">
+            <img src="./src/assets/Logo circulo.webp" data-animation-duration=".8s" alt="Logo do Restaurante" class="hiddenBlur logo-home-mobile">
+            <div data-animation-duration=".8s" class="hiddenBlur container-logo-desktop"><img src="./src/assets/logo.webp" alt="Logo do Restaurante" class="logo-home-desktop"></div>
+            <div class="header-desktop">
+                <nav class="nav-desktop">
+                    <ul class="nav-list-desktop">
+                        <li class="nav-item-desktop">
+                            <a href="#about">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item-desktop">
+                            <a href="#chef">CHEF</a>
+                        </li>
+                        <li class="nav-item-desktop">
+                            <a href="#menu">CARDÁPIO</a>
+                        </li>
+                        <li class="nav-item-desktop">
+                            <a href="#wineList">CARTA DE VINHOS</a>
+                        </li>
+                        <li class="nav-item-desktop">
+                            <a target="_blank" href="">RESERVA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="home-content">
-                <p data-animation-duration=".8s"  class="hiddenLtoR home-subtitle">Restaurante Giotto</p>
-                <h1 data-animation-duration="1s" class="hiddenLtoR home-title">Venha sentir o frescor da nossa cozinha <span>italiana</span></h1>
+                <div class="info-home-content">
+                    <p data-animation-duration=".8s"  class="hiddenLtoR home-subtitle">Restaurante Giotto</p>
+                <h1 data-animation-duration="1s" class="hiddenLtoR home-title">Venha sentir o frescor da nossa<br class="br-desktop"> cozinha <span>italiana</span></h1>
+                </div>
                 <a href="#menu" class="home-menu-btn"><button>MENU</button></a>
             </div>
         </section>
@@ -90,8 +114,6 @@
                     </span>--></p> 
         
             </div>
-
-
             <div data-animation-duration=".8s" class="about-images hiddenRtoL">
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -100,12 +122,12 @@
                       <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/sobre3.jpg" alt="Imagem do Restaurante" class="about-image"></div>
                     </div>
                     <!-- Setas de navegação -->
-   
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <!-- Dots de navegação -->
                     <div class="swiper-pagination"></div>
                   </div>
             </div>
-
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script src="./src/scripts/index.js" type="module" defer></script>
         </section>
@@ -136,14 +158,14 @@
                       <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/ambiente 3.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
                     </div>
                     <!-- Setas de navegação -->
-   
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <!-- Dots de navegação -->
                     <div class="swiper-pagination"></div>
                   </div>
             </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="./src/scripts/index.js" type="module" defer></script>
+
         </section>
         <section id="chef" class="chef-container">
             <div data-animation-duration=".8s" class="chef-content ">
@@ -207,6 +229,64 @@
                     <!-- Pagination dots -->
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="body-suggestions">
+                    <div class="swiper-suggestions-desktop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="container-infos">
+                                    <div class="tittle-content-container">
+                                        <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
+                                        <div class="styled-border"></div>
+                                    </div>
+                                    <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+                                    <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
+                                        sal, legumes levemente tostados, alho confit e nosso
+                                        cremoso e aveludado Aligot
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-infos">
+                                    <div class="tittle-content-container">
+                                        <h3 class="title-suggestion">Costeleta de Agnelo</h3>
+                                        <div class="styled-border"></div>
+                                    </div>
+                                    <img class="swiper-slide-img" src="./src/assets/sugestao 2.jpg" alt="Dish 1" class="suggestions-image">
+                                    <p class="text-suggestion">Carré de cordeiro grelhado, creme de mandioquinha, farofa de bacon, molho pesto e raspa de limão siciliano.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-infos">
+                                    <div class="tittle-content-container">
+                                        <h3 class="title-suggestion">Crochetta de Agnelo</h3>
+                                        <div class="styled-border"></div>
+                                    </div>
+                                    <img class="swiper-slide-img" src="./src/assets/sugestao 3.jpg" alt="Dish 1" class="suggestions-image">
+                                    <p class="text-suggestion">Croquete de cordeiro cozido lentamente com vinho tinto. Acompanha molho Aioli.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-infos">
+                                    <div class="tittle-content-container">
+                                        <h3 class="title-suggestion">Crochetta de Agnelo</h3>
+                                        <div class="styled-border"></div>
+                                    </div>
+                                    <img class="swiper-slide-img" src="./src/assets/sugestao 3.jpg" alt="Dish 1" class="suggestions-image">
+                                    <p class="text-suggestion">Croquete de cordeiro cozido lentamente com vinho tinto. Acompanha molho Aioli.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- Pagination dots -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </section>
@@ -4152,7 +4232,6 @@
             </div>
         </section>
     </main>
-
     <footer id="footer" class="footer-container">
             <div class="contacts">
                 <h2>CONTATO</h2>
