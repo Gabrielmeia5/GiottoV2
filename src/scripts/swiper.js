@@ -29,6 +29,20 @@ export function swiperAdd() {
           prevEl: '.swiper-button-prev',
         },
       });
+
+      const swiperAssessment = new Swiper('.swiper-assessments', {
+        loop: true,
+        dynamicBullets: true, // Faz os bullets se adaptarem dinamicamente
+        effect: 'fade',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 }
 
 

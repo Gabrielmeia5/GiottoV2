@@ -9,7 +9,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-
+    
 }   
 
 .about-content {
@@ -105,7 +105,7 @@
     height: 100%; /* Ocupa 100% da altura do container */
   }
   
-  .swiper-slide img {
+  .swiper-slide .swiper-slide-img {
     width: 100%; /* Largura ajusta-se ao container */
     height: 100%; /* Altura ajusta-se ao container */
     object-fit: cover; /* Corta o excesso para preencher o espaço */

@@ -30,3 +30,8 @@ document.querySelector('.menu-btn-mobile').addEventListener('click', () => {
 document.querySelector('.wine-btn-mobile').addEventListener('click', () => {
   window.open('https://drive.google.com/file/d/1RLnUO11vOKu2zZjh0vRE75e_IJ7zJM38/view', '_blank');
 })
+
+document.querySelector('.winery-btn-mobile').addEventListener('click', () => {
+  window.open('https://www.instagram.com/vinicolaalmarios/', '_blank');
+})
+

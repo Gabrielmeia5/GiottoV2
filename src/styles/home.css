@@ -7,8 +7,8 @@
     
     width: 100vw;
     height: 100vh;
-
     background: url("../assets/background.jpg");
+    background-attachment: fixed;
     background-size: auto 100%; /* Ajusta a altura para 100%, sem distorcer a proporção */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     background-position: center; /* Centraliza a imagem horizontalmente */

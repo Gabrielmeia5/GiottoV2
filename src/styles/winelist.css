@@ -121,6 +121,11 @@
   cursor: pointer;
 }
 
+.sub-wine-list-row {
+  display: flex;
+  overflow: hidden;
+  padding: .2em 0;
+}
 
 
 .sub-wine-list-nav li {
@@ -203,6 +208,7 @@ margin-right: 0.1em;
   background-color: transparent;
   display: inline-flex;
   align-items: center;
+  overflow: hidden;
   transition: transform 0.5s;
 }
 .text-wine-nav {
@@ -243,6 +249,7 @@ margin-right: 0.1em;
 }
 .text-sub-wine-nav {
   color: white;
+  padding: .5em 1em .5em .2em;
   cursor: pointer;
   font-size: 0.9rem;
 }

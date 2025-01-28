@@ -6,8 +6,8 @@
     <title>Giotto: Cucina e Vino</title>
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link
   rel="stylesheet"
@@ -42,7 +42,7 @@
                     <a href="#wineList">CARTA DE VINHOS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact">CONTATO</a>
+                    <a href="#footer">CONTATO</a>
                 </li>
                 <li class="nav-item">
                     <a target="_blank" href="">RESERVA</a>
@@ -68,7 +68,7 @@
             <div class="home-content">
                 <p data-animation-duration=".8s"  class="hiddenLtoR home-subtitle">Restaurante Giotto</p>
                 <h1 data-animation-duration="1s" class="hiddenLtoR home-title">Venha sentir o frescor da nossa cozinha <span>italiana</span></h1>
-                <a href="" class="home-menu-btn"><button>MENU</button></a>
+                <a href="#menu" class="home-menu-btn"><button>MENU</button></a>
             </div>
         </section>
         <section id="about" class="about-container">
@@ -88,15 +88,16 @@
                     atenciosa e altamente qualificada, garante um serviço
                     impecável, tornando cada visita memorável
                     </span>--></p> 
+        
             </div>
 
 
             <div data-animation-duration=".8s" class="about-images hiddenRtoL">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./src/assets/sobre1.jpg" alt="Imagem do Restaurante" class="about-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/sobre2.jpg" alt="Imagem do Restaurante" class="about-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/sobre3.jpg" alt="Imagem do Restaurante" class="about-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/sobre1.jpg" alt="Imagem do Restaurante" class="about-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/sobre2.jpg" alt="Imagem do Restaurante" class="about-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/sobre3.jpg" alt="Imagem do Restaurante" class="about-image"></div>
                     </div>
                     <!-- Setas de navegação -->
    
@@ -121,15 +122,18 @@
                     Descubra um ambiente onde o melhor da culinária e
                     enologia se encontra, transformando refeições em
                     experiências extraordinárias.</p> 
+                    <div class="footer-button-mobile-container">
+                        <button class="footer-btn-mobile">Reserva</button>
+                    </div>
             </div>
 
 
             <div data-animation-duration=".8s" class="environments-images hiddenRtoL">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./src/assets/ambiente 1.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/ambiente 2.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/ambiente 3.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/ambiente 1.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/ambiente 2.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/ambiente 3.jpg" alt="Imagem do Restaurante" class="environments-image"></div>
                     </div>
                     <!-- Setas de navegação -->
    
@@ -167,7 +171,7 @@
                                     <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
                                     <div class="styled-border"></div>
                                 </div>
-                                <img src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
+                                <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
                                 <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
                                     sal, legumes levemente tostados, alho confit e nosso
                                     cremoso e aveludado Aligot
@@ -180,7 +184,7 @@
                                     <h3 class="title-suggestion">Costeleta de Agnelo</h3>
                                     <div class="styled-border"></div>
                                 </div>
-                                <img src="./src/assets/sugestao 2.jpg" alt="Dish 1" class="suggestions-image">
+                                <img class="swiper-slide-img" src="./src/assets/sugestao 2.jpg" alt="Dish 1" class="suggestions-image">
                                 <p class="text-suggestion">Carré de cordeiro grelhado, creme de mandioquinha, farofa de bacon, molho pesto e raspa de limão siciliano.
                                 </p>
                             </div>
@@ -191,7 +195,7 @@
                                     <h3 class="title-suggestion">Crochetta de Agnelo</h3>
                                     <div class="styled-border"></div>
                                 </div>
-                                <img src="./src/assets/sugestao 3.jpg" alt="Dish 1" class="suggestions-image">
+                                <img class="swiper-slide-img" src="./src/assets/sugestao 3.jpg" alt="Dish 1" class="suggestions-image">
                                 <p class="text-suggestion">Croquete de cordeiro cozido lentamente com vinho tinto. Acompanha molho Aioli.
                                 </p>
                             </div>
@@ -841,9 +845,9 @@
             <div data-animation-duration=".8s" class="cellar-images hiddenRtoL">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./src/assets/grandcru1.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/grandcru2.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
-                      <div class="swiper-slide"><img src="./src/assets/grandcru3.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/grandcru1.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/grandcru2.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
+                      <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/grandcru3.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
                     </div>
                     <!-- Setas de navegação -->
    
@@ -4043,8 +4047,170 @@
                 <img src="./src/assets/image-prato 5.jpg" alt="Imagem de um prato">
             </div>
         </section>
-
+        <section data-animation-duration=".8s" id="assessments" class="hiddenLtoR assessments-container">
+            <h2 class="assessment-title">Avaliações</h2>
+            <div class="assessments-content">
+                <div class="container-images-assessment">
+                <div class="swiper-assessments">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <div class="container-infos-assessments">
+                                    <div class="container-starts">
+                                        <img class="star" src="./src/assets/star.png" alt="">
+                                        <img class="star" src="./src/assets/star.png" alt="">
+                                        <img class="star" src="./src/assets/star.png" alt="">
+                                        <img class="star" src="./src/assets/star.png" alt="">
+                                        <img class="star" src="./src/assets/star.png" alt="">
+                                    </div>
+                                    <p class="text-assessment">“ Gosto do local, não temos em Patos algo parecido,
+                                        ambiente agradável para almoçar e ou jantar
+                                        casualmente sem muita bagunça então lá é perfeito para
+                                        quem quer tomar um vinho e conversar!! Comida sempre
+                                        bem servida e os proprietários sempre gentis,
+                                        oferecendo um bom papo!!! Como mineiro que somos
+                                        gostamos disso!! “                                    
+                                    </p>
+                                    <div class="container-plataform">
+                                        <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
+                                        <p class="plataform-user">Danilo Matos</p>
+                                        <p class="plataform-name">Google</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-infos-assessments">
+                                <div class="container-starts">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                </div>
+                                <p class="text-assessment">“ Equipe maravilhosa e comida de excelência que proporciona uma experiência sensorial magnífica. Ótima carta de vinhos e um cardápio variado de massas, com destaque para as sobremesas (banoffe, brownie com sorvete e cremebrule). “                                    
+                                </p>
+                                <div class="container-plataform">
+                                    <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
+                                    <p class="plataform-user">Stephanne Ribeiro</p>
+                                    <p class="plataform-name">Google</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-infos-assessments">
+                            <div class="container-starts">
+                                <img class="star" src="./src/assets/star.png" alt="">
+                                <img class="star" src="./src/assets/star.png" alt="">
+                                <img class="star" src="./src/assets/star.png" alt="">
+                                <img class="star" src="./src/assets/star.png" alt="">
+                                <img class="star" src="./src/assets/star.png" alt="">
+                            </div>
+                            <p class="text-assessment">“ A comida estava otima!!! Muito muito gostosa. Pedimos um Penne e uma parmegiana. Estavam divinos. Fomos muito bem tratados. Se vc esta em duvida entre o Rafael Magalhaes e o Giotto, por favor, nao perca tempo e escolha o Giotto. Obrigada pela experiência!!!!! “                                    
+                            </p>
+                            <div class="container-plataform">
+                                <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
+                                <p class="plataform-user">Ana Silva</p>
+                                <p class="plataform-name">Google</p>
+                            </div>
+                        </div>
+                </div>
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="winery" class="winery-container">
+            <div data-animation-duration=".8s" class="winery-content hiddenLtoR">
+                
+                <h3 class="winery-subtitle">NOSSA VINICOLA</h3>
+                <h2 class="winery-title">Vinicola Alma Rios</h2>
+                <p class="winery-text">Localizada em Patos de Minas, a Alma Rios nasceu
+                    em 2021 com o propósito de transformar o Cerrado
+                    Mineiro em vinhos que encantam. Unindo tradição e
+                    inovação, cada garrafa reflete a essência da região,
+                    proporcionando momentos autênticos e
+                    memoráveis aos apaixonados por vinho.                    
+                    </p> 
+                    <div class="winery-button-mobile-container">
+                        <button class="winery-btn-mobile">Saiba mais</button>
+                    </div>
+                    <div data-animation-duration=".8s" class="winery-images hiddenRtoL">
+                        <div class="border-winery"></div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/winery1.jpg" alt="Imagem da Vinicola"></div>
+                              <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/winery2.jpg" alt="Imagem da Vinicola"></div>
+                              <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/winery3.jpg" alt="Imagem da Vinicola"></div>
+                            </div>
+                            <!-- Setas de navegação -->
+           
+                            <!-- Dots de navegação -->
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+            </div>
+        </section>
     </main>
+
+    <footer id="footer" class="footer-container">
+            <div class="contacts">
+                <h2>CONTATO</h2>
+                <p>(34) 9 8802-0998 <br> 8802-0998</p>
+            </div>
+            <div class="adress">
+                <h2>ENDEREÇO</h2>
+                <p>Av. Paranaíba, 496 - Centro, <br>
+                    Patos de Minas - MG, 38700-128
+                    </p>
+            </div>
+            <div class="horary">
+                <h2>HORÁRIOS</h2>
+                <p>Terça à quinta de 19:00 à 22:30 <br>
+                    Sexta e Sábado de 19:00 às 23:30
+                    </p>
+            </div>
+            <div class="about-footer">
+                <div data-animation-duration=".8s" class="hiddenBlur container-image-footer">
+                    <div class="line left"></div> <!-- Linha à esquerda -->
+                    <img src="./src/assets/Logo circulo.webp" alt="">
+                    <div class="line right"></div> <!-- Linha à direita -->
+                </div>
+                
+
+                <p>No Giotto Cucina e Vino, nossa missão é oferecer
+                    uma experiência gastronômica memorável,
+                    combinando a autenticidade da cozinha italiana
+                    com a excelência da enologia. Cada detalhe é
+                    pensado para criar momentos únicos: pratos de
+                    qualidade excepcional, um ambiente acolhedor
+                    e um atendimento impecável que transformam
+                    cada visita em uma celebração de sabores e
+                    sofisticação.</p>
+
+                    <div class="footer-button-mobile-container">
+                        <button class="footer-btn-mobile">Reserva</button>
+                    </div>
+
+                <div data-animation-duration=".8s" class="hiddenBtoT social-media-container-footer">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook-f social-media-icon-footer"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram social-media-icon-footer"></i>
+                        
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <i class="fa-brands fa-whatsapp social-media-icon-footer"></i>
+                    </a>
+                </div>
+
+                <div class="copy">
+                    <p>Giotto Cucina e Vino© | <a target="_blank" href="https://www.linkedin.com/in/gabriellima12/">Desenvolvido por Gabriel Lima</a></p>
+                </div>
+            </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/scripts/index.js" type="module" defer></script>
 </body>

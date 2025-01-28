@@ -1,0 +1,139 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--secondary-color-bg);
+  padding-top: 2em;
+  gap: 1.5em;
+  border-radius: 1vw;
+}
+
+.contacts,
+.adress,
+.horary {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+}
+
+.footer-container h2 {
+  font-family: 'Shadows Into Light Two';
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-container p {
+  font-family: 'Rubik', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .05em;
+  width: 80vw;
+  font-weight: 400;
+}
+
+/* Estilo para a seção 'about-footer' */
+.about-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.about-footer p {
+  color: var(--secondary-color);
+}
+
+.container-image-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  gap: 3em;
+  width: 100%;
+}
+
+/* Linhas laterais */
+.line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30vw;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.left {
+  left: 0em; /* Linha à esquerda da imagem */
+
+}
+
+.right {
+  right: 0em; /* Linha à direita da imagem */
+
+}
+
+/* Ajustes para a imagem */
+.about-footer img {
+  max-width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+
+
+
+
+.footer-button-mobile-container {
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-btn-mobile {
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: 200;
+  border-radius: .3vw;
+  padding: .8em 1.5em;
+  font-size: 1rem;
+  margin-top: .5em;
+  cursor: pointer;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.social-media-container-footer {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center;    /* Centraliza os ícones verticalmente */
+}
+
+.social-media-icon-footer {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.copy p {
+  font-size: .5rem;
+
+  margin-bottom: 1em;
+}

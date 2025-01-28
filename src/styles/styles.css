@@ -9,8 +9,9 @@
 @import url('cellar.css');
 @import url('winelist.css');
 @import url('gallery.css');
-
-
+@import url('assessment.css');
+@import url('winery.css');
+@import url('footer.css');
 
 
 :root {
@@ -19,6 +20,10 @@
     --tertiary-color: #d2b772;
     --primary-color-bg: #202121;
     --secondary-color-bg: #232525;
+
+    --font-primary: 'Rubik', sans-serif;
+    --font-secondary: 'Playfair Display', cursive;
+    --font-decorative: 'Great Vibes', serif;
 }
 
 * {
@@ -38,3 +43,14 @@ body {
 .hidden {
     display: none;
 }
+
+.swiper-slide {
+    opacity: 0 !important; /* Torna o slide invisível */
+    pointer-events: none !important; /* Desativa a interação com o slide */
+    transition: opacity 0.3s ease !important; /* Suaviza a transição */
+  }
+  
+  .swiper-slide-active {
+    opacity: 1 !important; /* Torna o slide ativo visível */
+    pointer-events: auto !important; /* Permite a interação com o slide ativo */
+  }
