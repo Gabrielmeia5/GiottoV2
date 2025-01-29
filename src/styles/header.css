@@ -54,7 +54,7 @@
   background: transparent;
   cursor: pointer;
   display: block;
-  z-index: 10000;
+  z-index: 999;
 }
 
 .btn-mobile input {

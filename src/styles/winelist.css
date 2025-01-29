@@ -124,6 +124,7 @@
 .sub-wine-list-row {
   display: flex;
   overflow: hidden;
+  flex-direction: column;
   padding: .2em 0;
 }
 
@@ -243,58 +244,6 @@ margin-right: 0.1em;
   font-size: 0.9rem;
 }
 
-.table-sub-nav-full {
-  width: 100%;
-  border-collapse: collapse;
-  margin-left: 1em;
-  overflow-x: auto;
-  position: relative;
-  margin-left: 0.2em;
-  bottom: 1em;
-  text-wrap: nowrap;
-}
-
-.table-sub-nav-full thead th {
-  text-align: center; /* Alinha o conteúdo ao centro */
-  padding: 12px 4px;
-  font-size: 0.8rem;
-  width: 25%; /* Defina a largura desejada para cada coluna */
-}
-
-
-
-.table-sub-nav-full tbody td {
-  text-align: left; /* Alinha o conteúdo à esquerda */
-  padding: 12px 8px;
-  font-size: 0.8rem;
-  width: 25%; /* Defina a largura desejada para cada coluna */
-}
-
-.table-sub-nav-full thead {
-  top: 0;
-  z-index: 1;
-}
-
-.table-sub-nav-full tbody td {
-  vertical-align: top;
-  word-wrap: break-word;
-}
-
-.table-sub-nav-full h3 {
-  margin: 0;
-  font-size: 0.7rem;
-}
-
-.table-sub-nav-full p {
-  margin: 4px 0 0;
-  font-size: 0.7rem;
-}
-
-.table-sub-nav-full .price {
-  font-size: 0.7rem;
-  text-align: right;
-  font-weight: bold;
-}
 
 .table-sub-nav {
     width: 100%;
@@ -313,7 +262,6 @@ margin-right: 0.1em;
   .table-sub-nav thead th {
     text-align: center; /* Alinha o conteúdo ao centro */
     padding: 12px 4px;
-    
     font-size: 0.75rem;
   }
 
@@ -321,12 +269,21 @@ margin-right: 0.1em;
     width: 100%;
   }
  
-.table-sub-nav thead tr th:first-child {
+  .table-sub-nav thead tr th:first-child {
     width: 50%;
 }
 
 .table-sub-nav thead tr th:not(:first-child) {
     width: 25%;
+}
+
+.table-sub-nav tbody tr td:first-child {
+  width: 50%;
+}
+
+.table-sub-nav tbody tr td:not(:first-child) {
+  width: 25%;
+  text-align: center;
 }
 
 .table-sub-nav tbody td {
@@ -336,9 +293,7 @@ margin-right: 0.1em;
     width: 25%; /* Defina a largura desejada para as outras colunas */
 }
 
-.table-sub-nav tbody tr td:first-child {
-    width: 50% !important; /* Defina a largura desejada para a primeira coluna */
-}
+
 
 .table-sub-nav thead {
   top: 0;
@@ -434,7 +389,39 @@ margin-right: 0.1em;
 
 
 @media screen and (max-width: 386px) {
-  
+
+  .table-sub-nav thead tr th:first-child {
+    width: 60%;
+}
+
+.table-sub-nav thead tr th:not(:first-child) {
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.table-sub-nav tbody tr td:first-child {
+  width: 60%;
+}
+
+.table-sub-nav tbody tr td:not(:first-child) {
+  width: 30%;
+  padding-left: 0;
+    padding-right: 0;
+}
+.table-sub-nav h3 {
+  margin: 0;
+  font-size: 0.75rem;
+  word-wrap: break-word; /* Quebra de palavras longas */
+}
+
+.table-sub-nav p {
+  margin: 4px 0 0;
+  font-size: .75rem;
+}
+
+
+
 }
 
 @media screen and (min-width: 387px) and (max-width: 575px) {
@@ -446,7 +433,33 @@ margin-right: 0.1em;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wine-list-content {
+    width: 50vw;
+  }
 
+  .table-sub-nav h3 {
+    font-size: .8rem;
+
+  }
+
+  .table-sub-nav thead th {
+
+    font-size: 0.8rem;
+  }
+  
+  .table-sub-nav p {
+    font-size: .8rem;
+  }
+  .text-sub-wine-nav {
+    font-size: 1rem;
+  }
+
+  .table-sub-nav .price {
+    font-size: .8rem;
+    text-align: right;
+    font-weight: bold;
+  }
+  
 }
 
 @media screen and (min-width: 1024px) {
@@ -454,8 +467,12 @@ margin-right: 0.1em;
     width: fit-content !important;
   }
   #wineListNav {
-    max-width: 80%;
+    width: 80%;
     gap: 0 !important;
+  }
+
+  .sub-wine-list-nav {
+    gap: 0;
   }
 
   .wine-list-nav-container-desktop,
@@ -574,6 +591,7 @@ margin-right: 0.1em;
     display: flex;
     overflow: hidden;
     cursor: pointer;
+
     border-bottom: 2px solid transparent;
     position: relative;
     flex-direction: column;

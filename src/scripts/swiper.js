@@ -50,6 +50,8 @@ export function swiperAdd() {
         slidePrevClass: 'swiper-slide-prev', // Classe para o slide anterior
         
       });
+
+      
 }
 
 
