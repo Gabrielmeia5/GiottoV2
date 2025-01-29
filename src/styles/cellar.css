@@ -96,3 +96,113 @@
 
 
 
+#cellar .swiper .swiper-button-prev,
+#cellar .swiper .swiper-button-next {
+  display: none;
+}
+
+
+@media screen and (max-width: 386px) {
+    
+  }
+  
+  @media screen and (min-width: 387px) and (max-width: 575px) {
+  
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+  
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #cellar .swiper {
+        width: 50vw;
+        height: 50vw;
+      }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .cellar-container {
+        min-height: 20vh;
+        flex-direction: row-reverse;
+        padding-bottom: 5em;
+        gap: 2em;
+      }
+      
+      .cellar-content {
+        height: auto;
+        width: 50%;
+        padding: 2em 3em;
+      }
+      .cellar-images {
+        height: 40vw;
+        width: 40vw;
+      }
+      
+      #cellar .swiper {
+        justify-content: center;
+        user-select: none;
+        align-items: center;
+        background-color: transparent;
+        margin: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      
+      .swiper .swiper-pagination {
+        bottom: 4% !important;
+        z-index: 10;
+      }
+      
+      #cellar .swiper-wrapper {
+        height: 85%;
+        width: 85% !important;
+      }
+      
+      #cellar .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      #cellar .swiper .swiper-button-prev,
+      #cellar .swiper .swiper-button-next {
+        color: white;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: none;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper .swiper-button-prev:hover,
+      .swiper .swiper-button-next:hover {
+        transform: scale(1.1);
+      }
+    
+      .swiper .swiper-button-prev::after,
+      .swiper .swiper-button-next::after {
+        font-size: 1em;
+        font-weight: bold;
+      }
+  
+  }
+  
+  @media screen and (min-width: 1350px) {
+    .cellar-content {
+        width: 30%;
+      }
+    
+      .cellar-title {
+        font-size: 2.8rem;
+      }
+    
+      .cellar-text {
+        font-size: 1.2rem;
+      }
+  }
+  

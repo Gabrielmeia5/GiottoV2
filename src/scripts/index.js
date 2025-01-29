@@ -1,7 +1,7 @@
 import { clickHandler } from './btns.js'
 import { initializeAnimations } from "./animations.js";
 import { swiperAdd } from "./swiper.js";
-import { menuNavegation, wineListNavegation, subWineListNavegation } from "./app.js";
+import { menuNavegation, menuNavegationDesktop, wineListNavegationMobile,wineListNavegationDesktop, subWineListNavegation, subWineListNavegationDesktop } from "./app.js";
 
 
 initializeAnimations();
@@ -15,12 +15,24 @@ document.querySelectorAll('.checkbox-menu').forEach(e => {
   e.addEventListener('change', menuNavegation);
 });
 
+document.querySelectorAll('.checkbox-menu-desktop').forEach(e => {
+  e.addEventListener('change', menuNavegationDesktop);
+});
+
 document.querySelectorAll('.checkbox-wine').forEach(e => {
-  e.addEventListener('change', wineListNavegation);
+  e.addEventListener('change', wineListNavegationMobile);
+});
+
+document.querySelectorAll('.checkbox-wine-desktop').forEach(e => {
+  e.addEventListener('change', wineListNavegationDesktop);
 });
 
 document.querySelectorAll('.checkbox-sub-wine').forEach(e => {
   e.addEventListener('change', subWineListNavegation);
+});
+
+document.querySelectorAll('.checkbox-sub-wine-desktop').forEach(e => {
+  e.addEventListener('change', subWineListNavegationDesktop);
 });
 
 document.querySelector('.menu-btn-mobile').addEventListener('click', () => {

@@ -70,10 +70,10 @@
   font-size: 1rem;
 }
 
-.wine-list-header li {
+/* .wine-list-header li {
   display: inline;
   border-bottom: 2px solid transparent;
-}
+} */
 
 .wine-list-nav {
   display: flex;
@@ -128,12 +128,6 @@
 }
 
 
-.sub-wine-list-nav li {
-  display: inline;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  position: relative;
-}
 
 .sub-wine-list-nav .selectSubNavWineList {
   font-weight: 700;
@@ -163,11 +157,6 @@
   overflow-x: hidden;
   padding: 0.5em;
   position: relative;
-}
-
-.wine-list-header li {
-  display: block;
-  padding-left: 0.4em;
 }
 
 .wine-list-header ul::after {
@@ -424,4 +413,251 @@ margin-right: 0.1em;
 }
 .wine-btn-mobile span {
   font-size: .6rem;
+}
+
+
+
+.wine-list-nav-container-desktop,
+.container-sub-wine-list-desktop {
+  display: none !important;
+}
+
+.wine-list-mobile-tittle-nav,
+.sub-wine-list-container-mobile {
+  display: block;
+  overflow: hidden;
+  height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 386px) {
+  
+}
+
+@media screen and (min-width: 387px) and (max-width: 575px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+  .wine-list-content {
+    width: fit-content !important;
+  }
+  #wineListNav {
+    max-width: 80%;
+    gap: 0 !important;
+  }
+
+  .wine-list-nav-container-desktop,
+  .container-sub-wine-list-desktop {
+    display: flex !important;
+  } 
+
+  #wineListNavDesktop {
+    display: flex;
+  }
+
+  #wineList {
+    min-height: 100vh;
+    scroll-margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .wine-list-content h2 {
+    font-size: 3rem;
+  }
+
+  .checkbox-wine-desktop {
+    display: none;
+  }
+
+  .wine-list-content {
+    width: fit-content;
+    padding: 0 5em;
+  }
+
+  #wineList .wine-list-nav-container-desktop{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    width: fit-content;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+ 
+  #wineList .wine-list-nav-container-desktop::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--primary-color),
+      var(--primary-color) 3px,
+      transparent 5px,
+      transparent 7px
+    );
+  }
+  .wine-list-container::before {
+    display: none;
+  }
+
+  .wine-list-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wine-list-mobile-tittle-nav {
+    display: none !important;
+    padding: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  .sub-wine-list-container-mobile {
+    display: none !important;
+    border: none;
+    cursor: none;
+    padding: 0;
+    width: 0;
+    margin: 0;
+
+  }
+
+  .sub-wine-list-nav {
+
+    border: none;
+
+  }
+
+
+  .sub-wine-list-desktop {
+    margin: 0 auto;
+    color: var(--secondary-color);
+  margin-top: 1.5em;
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 0.5em 0.5em 0 0.5em;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--primary-color);
+  user-select: none;
+  text-wrap: nowrap;
+  position: relative;
+  max-width: 100%;
+  overflow-y: hidden;
+  }
+
+  .selectSubNavWineList {
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  .sub-wine-list-row {
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+  }
+  .sub-wine-list-desktop input[type="checkbox"] {
+    display: none;
+  }
+
+
+
+
+
+  .table-sub-nav {
+    width: 80%;
+    margin: 0;
+    
+    
+    color: white;
+    bottom: 1em;
+    box-sizing: border-box;
+  }
+  
+  .table-sub-nav thead th {
+    text-align: center; /* Alinha o conteúdo ao centro */
+
+    
+    font-size: 1rem;
+  }
+
+  
+
+
+.table-sub-nav thead tr th:first-child {
+    width: 50%;
+}
+
+.table-sub-nav thead tr th:not(:first-child) {
+    width: 25%;
+}
+
+.table-sub-nav tbody tr td:first-child {
+  width: 50%;
+}
+
+.table-sub-nav tbody tr td:not(:first-child) {
+  width: 25%;
+  text-align: center;
+}
+
+
+
+.table-sub-nav h3 {
+  margin: 0;
+  font-size: 1rem;
+  word-wrap: break-word; /* Quebra de palavras longas */
+}
+
+.table-sub-nav p {
+  margin: 4px 0 0;
+  font-size: .9rem;
+}
+
+
+.table-sub-nav .price {
+  font-size: .9rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.table-sub-nav-glasses {
+  margin-left: 15%;
+  width: 80%;
+  margin-right: 5%;
+}
+
+
+ 
+}
+
+@media screen and (min-width: 1350px) {
+  
+  
+
 }

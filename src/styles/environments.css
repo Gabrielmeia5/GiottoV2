@@ -82,6 +82,12 @@
 }
 
 
+#environments .swiper .swiper-button-prev,
+#environments .swiper .swiper-button-next {
+  display: none;
+}
+
+
 
 @media screen and (max-width: 386px) {
   /* Mobile (pequenos smartphones e celulares antigos) */

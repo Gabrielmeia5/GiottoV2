@@ -298,9 +298,97 @@
                 <div class="menu-container">
                     <div class="menu-header">
                         <div class="menu-nav">
-                            <ul id="menuList" class="menu-list">
-                                <li class="" id="antipastiRow">
+                            
+                            <ul id="menuListDesktop" class="menu-list-desktop">
+                                <li class="desktop-menu-row" id="antipastiRowDesktop">
                                     <div class="menu-tittle-content">
+                                            <input type="checkbox"
+                                            id="antipastiToggleDesktop"
+                                            class="checkbox-menu-desktop"
+                                            data-menu="antipasti">
+                                        <label class="text-menu-nav"
+                                            for="antipastiToggleDesktop">ANTIPASTI</label>
+                                    </div>
+                                </li>
+                                <li class="desktop-menu-row" id="risottoRowDesktop">
+                                    <div class="menu-tittle-content">
+                                        <input type="checkbox" class="checkbox-menu-desktop" id="risottoToggleDesktop" data-menu="risotto">
+                                    <label class="text-menu-nav "
+                                        for="risottoToggleDesktop">RISOTTO</label>
+                                    </div>
+                                </li>
+                                <li class="desktop-menu-row" id="pastaRowDesktop">
+                                    <div class="menu-tittle-content">
+                                        <input type="checkbox" class="checkbox-menu-desktop" data-menu="pasta" id="pastaToggleDesktop">
+                                        <label class="text-menu-nav"
+                                        for="pastaToggleDesktop">PASTA</label>
+                                    </div>
+                                </li>
+                                <li class="desktop-menu-row" id="principaleRowDesktop">
+                                    <div class="menu-tittle-content">
+                                        <input type="checkbox"
+                                        class="checkbox-menu-desktop"
+                                        data-menu="principale"
+                                        id="principaleToggleDesktop">
+                                        <label class="text-menu-nav"
+                                        for="principaleToggleDesktop">PRINCIPALE</label>
+                                    </div>
+                                </li>
+                                 <li class="desktop-menu-row" id="bambiniRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox"
+                                            class="checkbox-menu-desktop"
+                                            data-menu="bambini"
+                                                id="bambiniToggleDesktop">
+                                            <label class="text-menu-nav"
+                                                for="bambiniToggleDesktop">BAMBINI</label>
+                                        </div>
+                                </li>
+                                <li class="desktop-menu-row" id="dolciRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox" data-menu="dolci" class="checkbox-menu-desktop" id="dolciToggleDesktop">
+                                            <label class="text-menu-nav" for="dolciToggleDesktop">DOLCI</label>
+                                        </div>
+                                </li>
+                                <li class="desktop-menu-row" id="bevandeRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox"
+                                            data-menu="bevande"
+                                            class="checkbox-menu-desktop"
+                                                id="bevandeToggleDesktop">
+                                            <label class="text-menu-nav"
+                                                for="bevandeToggleDesktop">BEVANDE</label>
+                                        </div>
+                                </li>
+                                <li class="desktop-menu-row" id="birraRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox" class="checkbox-menu-desktop" data-menu="birra" id="birraToggleDesktop">
+                                            <label class="text-menu-nav" for="birraToggleDesktop">BIRRA</label>
+                                        </div>
+                                </li>
+                                <li class="desktop-menu-row" id="sucosRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox" class="checkbox-menu-desktop" data-menu="sucos" id="sucosToggleDesktop">
+                                            <label class="text-menu-nav" for="sucosToggleDesktop">SUCOS INTEGRAIS</label>
+                                        </div>
+                                </li>
+                                <li class="desktop-menu-row" id="distillatoRowDesktop">
+                                        <div class="menu-tittle-content">
+                                            <input type="checkbox"
+                                            data-menu="distillato"
+                                            class="checkbox-menu-desktop"
+                                                id="distillatoToggleDesktop">
+                                            <label class="text-menu-nav"
+                                                for="distillatoToggleDesktop">DISTILLATO</label>
+                                        </div>
+                                </li>
+                            </ul>      
+
+
+
+                            <ul id="menuList" class="menu-list-mobile">
+                                <li class="" id="antipastiRow">
+                                    <div class="menu-tittle-content mobile-menu-nav mobile-menu-nav">
                                             <input type="checkbox"
                                             id="antipastiToggle"
                                             class="checkbox-menu"
@@ -416,7 +504,7 @@
                                     </div>
                                 </li>
                                 <li class="" id="risottoRow">
-                                    <div class="menu-tittle-content">
+                                    <div class="menu-tittle-content mobile-menu-nav">
                                         <input type="checkbox" class="checkbox-menu" id="risottoToggle" data-menu="risotto">
                                     <label class="icon-menu-nav risotto-icon"
                                         for="risottoToggle"><i
@@ -475,7 +563,7 @@
                                     </div>
                                 </li>
                                 <li class="" id="pastaRow">
-                                    <div class="menu-tittle-content">
+                                    <div class="menu-tittle-content mobile-menu-nav">
                                         <input type="checkbox" class="checkbox-menu" data-menu="pasta" id="pastaToggle">
                                         <label class="icon-menu-nav pasta-icon"
                                         for="pastaToggle"><i
@@ -555,7 +643,7 @@
                                     </div>
                                 </li>
                                 <li class="" id="principaleRow">
-                                    <div class="menu-tittle-content">
+                                    <div class="menu-tittle-content mobile-menu-nav">
                                         <input type="checkbox"
                                         class="checkbox-menu"
                                         data-menu="principale"
@@ -687,7 +775,7 @@
                                     </div>
                                 </li>
                                  <li class="" id="bambiniRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox"
                                             class="checkbox-menu"
                                             data-menu="bambini"
@@ -723,7 +811,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="dolciRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox" data-menu="dolci" class="checkbox-menu" id="dolciToggle">
                                             <label class="icon-menu-nav dolci-icon" for="dolciToggle"><i class="fa-solid fa-chevron-up"></i></label>
                                             <label class="text-menu-nav" for="dolciToggle">DOLCI</label>
@@ -773,7 +861,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="bevandeRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox"
                                             data-menu="bevande"
                                             class="checkbox-menu"
@@ -822,7 +910,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="birraRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox" class="checkbox-menu" data-menu="birra" id="birraToggle">
                                             <label class="icon-menu-nav birra-icon" for="birraToggle"><i class="fa-solid fa-chevron-up"></i></label>
                                             <label class="text-menu-nav" for="birraToggle">BIRRA</label>
@@ -846,7 +934,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="sucosRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox" class="checkbox-menu" data-menu="sucos" id="sucosToggle">
                                             <label class="icon-menu-nav sucos-icon" for="sucosToggle"><i class="fa-solid fa-chevron-up"></i></label>
                                             <label class="text-menu-nav" for="sucosToggle">SUCOS INTEGRAIS</label>
@@ -873,7 +961,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="distillatoRow">
-                                        <div class="menu-tittle-content">
+                                        <div class="menu-tittle-content mobile-menu-nav">
                                             <input type="checkbox"
                                             data-menu="distillato"
                                             class="checkbox-menu"
@@ -898,6 +986,10 @@
                                         </div>
                                 </li>
                             </ul>           
+
+
+
+
                         </div>
                     </div>
                     <div class="menu-button-mobile-container">
@@ -930,7 +1022,8 @@
                       <div class="swiper-slide"><img class="swiper-slide-img" src="./src/assets/grandcru3.jpg" alt="Imagem do Restaurante" class="cellar-image"></div>
                     </div>
                     <!-- Setas de navegação -->
-   
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <!-- Dots de navegação -->
                     <div class="swiper-pagination"></div>
                   </div>
@@ -942,9 +1035,231 @@
                     <h2 class="wine-list-tittle">Carta de Vinhos</h2>
                     <div class="wine-list-header">
                         <div class="wine-list-nav">
-                            <ul id="wineListNav" class="wine-list-nav-container">
-                                <li class="" id="glassesRow">
+                            <ul id="wineListNavDesktop" class="wine-list-nav-container-desktop">
+                                <li class="" id="glassesRowDesktop">
                                     <input type="checkbox"
+                                            id="glassesToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="glasses">
+                                        <label class="text-wine-nav" for="glassesToggleDesktop">TAÇAS</label>
+                                </li>
+                                <li class="" id="bottlesRowDesktop">
+                                    <input type="checkbox"
+                                            id="bottlesToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="bottles">
+                                        <label class="text-wine-nav" for="bottlesToggleDesktop">GARRAFAS MÉDIAS</label>
+                                </li>
+                                <li class="" id="sparklingRowDesktop">
+                                    <input type="checkbox"
+                                            id="sparklingToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="sparkling">
+                                        <label class="text-wine-nav" for="sparklingToggleDesktop">ESPUMANTES</label>
+                                </li>
+                                <li class="" id="whiteRowDesktop">
+                                    <input type="checkbox"
+                                            id="whiteToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="white">
+                                        <label class="text-wine-nav" for="whiteToggleDesktop">BRANCOS</label>
+                                </li>
+                                <li class="" id="roseRowDesktop">
+                                    <input type="checkbox"
+                                            id="roseToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="rose">
+                                        <label class="text-wine-nav" for="roseToggleDesktop">ROSÉS</label>
+                                </li>
+                                <li class="" id="redRowDesktop">
+                                    <input type="checkbox"
+                                            id="redToggleDesktop"
+                                            class="checkbox-wine-desktop"
+                                            data-wine="red">
+                                        <label class="text-wine-nav" for="redToggleDesktop">TINTOS</label>
+                                </li>
+                            </ul>
+
+                            <div class="container-sub-wine-list-desktop">
+                                <ul class="sub-wine-list-desktop sub-wine-list-bottles-desktop hidden">
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-bottles-desktop-row">
+                                        <input type="checkbox"
+                                        id="bottlesWhiteToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="bottles"
+                                        data-subwine="bottlesWhite">
+                                        <label class="text-sub-wine-nav-desktop" for="bottlesWhiteToggleDesktop">BRANCO</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-bottles-desktop-row">
+                                        <input type="checkbox"
+                                        id="bottlesRoseToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="bottles"
+                                        data-subwine="bottlesRose">
+                                        <label class="text-sub-wine-nav-desktop" for="bottlesRoseToggleDesktop">ROSÉ</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-bottles-desktop-row">
+                                        <input type="checkbox"
+                                        id="bottlesRedToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="bottles"
+                                        data-subwine="bottlesRed">
+                                        <label class="text-sub-wine-nav-desktop" for="bottlesRedToggleDesktop">TINTO</label>
+                                    </li>
+                                </ul>
+                                <ul class="sub-wine-list-desktop sub-wine-list-sparkling-desktop hidden">
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-sparkling-desktop-row">
+                                        <input type="checkbox"
+                                        id="sparklingBrToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="sparkling"
+                                        data-subwine="sparklingBr">
+                                        <label class="text-sub-wine-nav-desktop" for="sparklingBrToggleDesktop">BRASIL</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-sparkling-desktop-row">
+                                        <input type="checkbox"
+                                        id="sparklingEsToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="sparkling"
+                                        data-subwine="sparklingEs">
+                                        <label class="text-sub-wine-nav-desktop" for="sparklingEsToggleDesktop">ESPANHA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-sparkling-desktop-row">
+                                        <input type="checkbox"
+                                        id="sparklingFrToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="sparkling"
+                                        data-subwine="sparklingFr">
+                                        <label class="text-sub-wine-nav-desktop" for="sparklingFrToggleDesktop">FRANÇA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-sparkling-desktop-row">
+                                        <input type="checkbox"
+                                        id="sparklingItToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="sparkling"
+                                        data-subwine="sparklingIt">
+                                        <label class="text-sub-wine-nav-desktop" for="sparklingItToggleDesktop">ITÁLIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-sparkling-desktop-row">
+                                        <input type="checkbox"
+                                        id="sparklingPtToggleDesktop"
+                                        class="checkbox-sub-wine-desktop"
+                                        data-wineSection="sparkling"
+                                        data-subwine="sparklingPt">
+                                        <label class="text-sub-wine-nav-desktop" for="sparklingPtToggleDesktop">PORTUGAL</label>
+                                    </li>
+                                </ul>
+                                <ul class="sub-wine-list-desktop sub-wine-list-white-desktop hidden">
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteDeToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteDe">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteDeToggleDesktop">ALEMANHA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteArToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteAr">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteArToggleDesktop">ARGENTINA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteClToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteCl">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteClToggleDesktop">CHILE</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteEsToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteEs">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteEsToggleDesktop">ESPANHA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteUsToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteUs">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteUsToggleDesktop">ESTADOS UNIDOS</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteFrToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteFr">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteFrToggleDesktop">FRANÇA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteItToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteIt">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteItToggleDesktop">ITÁLIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whiteNzToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="white" data-subwine="whiteNz">
+                                        <label class="text-sub-wine-nav-desktop" for="whiteNzToggleDesktop">NOVA ZELÂNDIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-white-desktop-row">
+                                        <input type="checkbox" id="whitePtToggleDesktop" class="checkbox-sub-wine-desktop"  data-wineSection="white" data-subwine="whitePt">
+                                        <label class="text-sub-wine-nav-desktop" for="whitePtToggleDesktop">PORTUGAL</label>
+                                    </li>
+                                </ul>
+                                <ul class="sub-wine-list-desktop sub-wine-list-rose-desktop hidden">
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-rose-desktop-row">
+                                        <input type="checkbox" id="roseArToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="rose" data-subwine="roseAr">
+                                        <label class="text-sub-wine-nav-desktop" for="roseArToggleDesktop">ARGENTINA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-rose-desktop-row">
+                                        <input type="checkbox" id="roseClToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="rose" data-subwine="roseCl">
+                                        <label class="text-sub-wine-nav-desktop" for="roseClToggleDesktop">CHILE</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-rose-desktop-row">
+                                        <input type="checkbox" id="roseFrToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="rose" data-subwine="roseFr">
+                                        <label class="text-sub-wine-nav-desktop" for="roseFrToggleDesktop">FRANÇA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-rose-desktop-row">
+                                        <input type="checkbox" id="roseItToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="rose" data-subwine="roseIt">
+                                        <label class="text-sub-wine-nav-desktop" for="roseItToggleDesktop">ITÁLIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-rose-desktop-row">
+                                        <input type="checkbox" id="rosePtToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="rose" data-subwine="rosePt">
+                                        <label class="text-sub-wine-nav-desktop" for="rosePtToggleDesktop">PORTUGAL</label>
+                                    </li>
+                                </ul>
+                                <ul class="sub-wine-list-desktop sub-wine-list-red-desktop hidden">
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redArToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redAr">
+                                        <label class="text-sub-wine-nav-desktop" for="redArToggleDesktop">ARGENTINA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redBrToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redBr">
+                                        <label class="text-sub-wine-nav-desktop" for="redBrToggleDesktop">BRASIL</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redClToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redCl">
+                                        <label class="text-sub-wine-nav-desktop" for="redClToggleDesktop">CHILE</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redEsToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redEs">
+                                        <label class="text-sub-wine-nav-desktop" for="redEsToggleDesktop">ESPANHA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redUsToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redUs">
+                                        <label class="text-sub-wine-nav-desktop" for="redUsToggleDesktop">ESTADOS UNIDOS</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redFrToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redFr">
+                                        <label class="text-sub-wine-nav-desktop" for="redFrToggleDesktop">FRANÇA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redItToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redIt">
+                                        <label class="text-sub-wine-nav-desktop" for="redItToggleDesktop">ITÁLIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redNzToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redNz">
+                                        <label class="text-sub-wine-nav-desktop" for="redNzToggleDesktop">NOVA ZELÂNDIA</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redPtToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redPt">
+                                        <label class="text-sub-wine-nav-desktop" for="redPtToggleDesktop">PORTUGAL</label>
+                                    </li>
+                                    <li class="sub-wine-list-row-desktop sub-wine-list-red-desktop-row">
+                                        <input type="checkbox" id="redUyToggleDesktop" class="checkbox-sub-wine-desktop" data-wineSection="red" data-subwine="redUy">
+                                        <label class="text-sub-wine-nav-desktop" for="redUyToggleDesktop">URUGUAI</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <ul id="wineListNav" class="wine-list-nav-container-mobile">
+                                <li class="" id="glassesRow">
+                                        <div class="wine-list-mobile-tittle-nav">
+                                            <input type="checkbox"
                                             id="glassesToggle"
                                             class="checkbox-wine"
                                             data-wine="glasses">
@@ -952,9 +1267,10 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="glassesToggle">TAÇAS</label>
+                                        </div>
                                         <div id="glassesMobile"
-                        class="glasses-wine-mobile hidden wine-list-section">
-                        <table  class="table-sub-nav-full ">
+                                        class="glasses-wine-mobile hidden wine-list-section">
+                                            <table  class="table-sub-nav table-sub-nav-glasses">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -982,11 +1298,12 @@
                                     <td class="price">R$ 25,42</td>
                                 </tr>
                             </tbody>
-                        </table>
+                                            </table>
                                         </div>
                                 </li>
                                 <li class="" id="bottlesRow">
-                                    <input type="checkbox"
+                                    <div class="wine-list-mobile-tittle-nav">
+                                        <input type="checkbox"
                                             id="bottlesToggle"
                                             class="checkbox-wine"
                                             data-wine="bottles">
@@ -994,19 +1311,23 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="bottlesToggle">GARRAFAS MÉDIAS</label>
+                                    </div>
                                         <div id="bottlesMobile"
                                         class="bottles-wine-mobile wine-list-section hidden">
                         <ul id="bottlesWineMobile" class="sub-wine-list-nav">
                             <li data-subnav="bottlesWhite"
                             class="sub-wine-list-row">
-                                <input type="checkbox"
+                                <div class="sub-wine-list-container-mobile">
+                                    <input type="checkbox"
                                     id="bottlesWhiteToggleMobile"
                                     class="checkbox-sub-wine"
+                                    data-wineSection="bottles"
                                     data-subwine="bottlesWhite">
                                      <label class="icon-sub-wine-nav bottlesWhite-icon" for="bottlesWhiteToggleMobile">
                                      <i class="fa-solid fa-chevron-up"></i>
                                     </label>
                                     <label class="text-sub-wine-nav" for="bottlesWhiteToggleMobile">BRANCO</label>
+                                </div>
                                     <table id="bottlesWhiteMobile" class="table-sub-nav hidden">
                                         <thead>
                                             <tr>
@@ -1038,14 +1359,17 @@
                             </li>
                             <li data-subnav="bottlesRose"
                             class="sub-wine-list-row">
-                                <input type="checkbox"
+                                <div class="sub-wine-list-container-mobile">
+                                    <input type="checkbox"
                                     id="bottlesRoseToggleMobile"
                                     class="checkbox-sub-wine"
+                                    data-wineSection="bottles"
                                     data-subwine="bottlesRose">
                                      <label class="icon-sub-wine-nav bottlesRose-icon" for="bottlesRoseToggleMobile">
                                      <i class="fa-solid fa-chevron-up"></i>
                                     </label>
                                     <label class="text-sub-wine-nav" for="bottlesRoseToggleMobile">ROSÉ</label>
+                                </div>
                                 <table id="bottlesRoseMobile" class="table-sub-nav hidden">
                                     <thead>
                                         <tr>
@@ -1068,14 +1392,17 @@
                             </li>
                             <li data-subnav="bottlesRed"
                             class="sub-wine-list-row">
-                                <input type="checkbox"
+                                <div class="sub-wine-list-container-mobile">
+                                    <input type="checkbox"
                                     id="bottlesRedToggleMobile"
                                     class="checkbox-sub-wine"
+                                    data-wineSection="bottles"
                                     data-subwine="bottlesRed">
                                      <label class="icon-sub-wine-nav bottlesRed-icon" for="bottlesRedToggleMobile">
                                      <i class="fa-solid fa-chevron-up"></i>
                                     </label>
                                     <label class="text-sub-wine-nav" for="bottlesRedToggleMobile">TINTO</label>
+                                </div>
                                 <table id="bottlesRedMobile" class="table-sub-nav hidden">
                                     <thead>
                                         <tr>
@@ -1140,7 +1467,8 @@
                                         </div>
                                 </li>
                                 <li class="" id="sparklingRow">
-                                    <input type="checkbox"
+                                    <div class="wine-list-mobile-tittle-nav">
+                                        <input type="checkbox"
                                             id="sparklingToggle"
                                             class="checkbox-wine"
                                             data-wine="sparkling">
@@ -1148,18 +1476,22 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="sparklingToggle">ESPUMANTES</label>
+                                    </div>
                                         <div id="sparklingMobile" class="sparkling-wine-mobile wine-list-section hidden">
                                             <ul id="sparklingWineMobile" class="sub-wine-list-nav">
                                                 <li data-subnav="sparklingBr"
                                                     class="sub-wine-list-row">
-                                                    <input type="checkbox"
-                                                    id="sparklingBrToggleMobile"
-                                                    class="checkbox-sub-wine"
-                                                    data-subwine="sparklingBr">
-                                                    <label class="icon-sub-wine-nav sparklingBr-icon" for="sparklingBrToggleMobile">
-                                                    <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="sparklingBrToggleMobile">BRASIL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox"
+                                                        id="sparklingBrToggleMobile"
+                                                        class="checkbox-sub-wine"
+                                                        data-wineSection="sparkling"
+                                                        data-subwine="sparklingBr">
+                                                        <label class="icon-sub-wine-nav sparklingBr-icon" for="sparklingBrToggleMobile">
+                                                        <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="sparklingBrToggleMobile">BRASIL</label>
+                                                    </div>
                                                     <table id="sparklingBrMobile" class="table-sub-nav hidden">
                                         <thead>
                                             <tr>
@@ -1220,11 +1552,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="sparklingEs" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="sparklingEsToggleMobile" class="checkbox-sub-wine" data-subwine="sparklingEs">
-                                                    <label class="icon-sub-wine-nav sparklingEs-icon" for="sparklingEsToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="sparklingEsToggleMobile">ESPANHA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="sparklingEsToggleMobile" class="checkbox-sub-wine" data-wineSection="sparkling" data-subwine="sparklingEs">
+                                                        <label class="icon-sub-wine-nav sparklingEs-icon" for="sparklingEsToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="sparklingEsToggleMobile">ESPANHA</label>
+                                                    </div>
                                                     <table id="sparklingEsMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1274,11 +1608,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="sparklingFr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="sparklingFrToggleMobile" class="checkbox-sub-wine" data-subwine="sparklingFr">
-                                                    <label class="icon-sub-wine-nav sparklingFr-icon" for="sparklingFrToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="sparklingFrToggleMobile">FRANÇA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="sparklingFrToggleMobile" class="checkbox-sub-wine" data-wineSection="sparkling" data-subwine="sparklingFr">
+                                                        <label class="icon-sub-wine-nav sparklingFr-icon" for="sparklingFrToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="sparklingFrToggleMobile">FRANÇA</label>
+                                                    </div>
                                                     <table id="sparklingFrMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1354,11 +1690,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="sparklingIt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="sparklingItToggleMobile" class="checkbox-sub-wine" data-subwine="sparklingIt">
-                                                    <label class="icon-sub-wine-nav sparklingIt-icon" for="sparklingItToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="sparklingItToggleMobile">ITÁLIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="sparklingItToggleMobile" class="checkbox-sub-wine" data-wineSection="sparkling" data-subwine="sparklingIt">
+                                                        <label class="icon-sub-wine-nav sparklingIt-icon" for="sparklingItToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="sparklingItToggleMobile">ITÁLIA</label>
+                                                    </div>
                                                     <table id="sparklingItMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1398,11 +1736,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="sparklingPt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="sparklingPtToggleMobile" class="checkbox-sub-wine" data-subwine="sparklingPt">
-                                                    <label class="icon-sub-wine-nav sparklingPt-icon" for="sparklingPtToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="sparklingPtToggleMobile">PORTUGAL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="sparklingPtToggleMobile" class="checkbox-sub-wine" data-wineSection="sparkling" data-subwine="sparklingPt">
+                                                        <label class="icon-sub-wine-nav sparklingPt-icon" for="sparklingPtToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="sparklingPtToggleMobile">PORTUGAL</label>
+                                                    </div>
                                                     <table id="sparklingPtMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1426,7 +1766,8 @@
                                         </div>
                                 </li>
                                 <li class="" id="whiteRow">
-                                    <input type="checkbox"
+                                    <div class="wine-list-mobile-tittle-nav">
+                                        <input type="checkbox"
                                             id="whiteToggle"
                                             class="checkbox-wine"
                                             data-wine="white">
@@ -1434,14 +1775,17 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="whiteToggle">BRANCOS</label>
+                                    </div>
                                         <div id="whiteMobile" class="white-wine-mobile wine-list-section hidden">
                                             <ul id="whiteWineMobile" class="sub-wine-list-nav">
                                                 <li data-subnav="whiteDe" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteDeToggleMobile" class="checkbox-sub-wine" data-subwine="whiteDe">
-                                                    <label class="icon-sub-wine-nav whiteDe-icon" for="whiteDeToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteDeToggleMobile">ALEMANHA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteDeToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteDe">
+                                                        <label class="icon-sub-wine-nav whiteDe-icon" for="whiteDeToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteDeToggleMobile">ALEMANHA</label>
+                                                    </div>
                                                     <table id="whiteDeMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1465,11 +1809,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteAr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteArToggleMobile" class="checkbox-sub-wine" data-subwine="whiteAr">
-                                                    <label class="icon-sub-wine-nav whiteAr-icon" for="whiteArToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteArToggleMobile">ARGENTINA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteArToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteAr">
+                                                        <label class="icon-sub-wine-nav whiteAr-icon" for="whiteArToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteArToggleMobile">ARGENTINA</label>
+                                                    </div>
                                                     <table id="whiteArMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1587,11 +1933,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteCl" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteClToggleMobile" class="checkbox-sub-wine" data-subwine="whiteCl">
-                                                    <label class="icon-sub-wine-nav whiteCl-icon" for="whiteClToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteClToggleMobile">CHILE</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteClToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteCl">
+                                                        <label class="icon-sub-wine-nav whiteCl-icon" for="whiteClToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteClToggleMobile">CHILE</label>
+                                                    </div>
                                                     <table id="whiteClMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1725,11 +2073,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteEs" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteEsToggleMobile" class="checkbox-sub-wine" data-subwine="whiteEs">
-                                                    <label class="icon-sub-wine-nav whiteEs-icon" for="whiteEsToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteEsToggleMobile">ESPANHA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteEsToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteEs">
+                                                        <label class="icon-sub-wine-nav whiteEs-icon" for="whiteEsToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteEsToggleMobile">ESPANHA</label>
+                                                    </div>
                                                     <table id="whiteEsMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1767,11 +2117,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteUs" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteUsToggleMobile" class="checkbox-sub-wine" data-subwine="whiteUs">
-                                                    <label class="icon-sub-wine-nav whiteUs-icon" for="whiteUsToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteUsToggleMobile">ESTADOS UNIDOS</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteUsToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteUs">
+                                                        <label class="icon-sub-wine-nav whiteUs-icon" for="whiteUsToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteUsToggleMobile">ESTADOS UNIDOS</label>
+                                                    </div>
                                                     <table id="whiteUsMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1817,11 +2169,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteFr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteFrToggleMobile" class="checkbox-sub-wine" data-subwine="whiteFr">
-                                                    <label class="icon-sub-wine-nav whiteFr-icon" for="whiteFrToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteFrToggleMobile">FRANÇA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteFrToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteFr">
+                                                        <label class="icon-sub-wine-nav whiteFr-icon" for="whiteFrToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteFrToggleMobile">FRANÇA</label>
+                                                    </div>
                                                     <table id="whiteFrMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -1908,11 +2262,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteIt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteItToggleMobile" class="checkbox-sub-wine" data-subwine="whiteIt">
-                                                    <label class="icon-sub-wine-nav whiteIt-icon" for="whiteItToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteItToggleMobile">ITÁLIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteItToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteIt">
+                                                        <label class="icon-sub-wine-nav whiteIt-icon" for="whiteItToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteItToggleMobile">ITÁLIA</label>
+                                                    </div>
                                                     <table id="whiteItMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2062,11 +2418,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whiteNz" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whiteNzToggleMobile" class="checkbox-sub-wine" data-subwine="whiteNz">
-                                                    <label class="icon-sub-wine-nav whiteNz-icon" for="whiteNzToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whiteNzToggleMobile">NOVA ZELÂNDIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whiteNzToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whiteNz">
+                                                        <label class="icon-sub-wine-nav whiteNz-icon" for="whiteNzToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whiteNzToggleMobile">NOVA ZELÂNDIA</label>
+                                                    </div>
                                                     <table id="whiteNzMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2104,11 +2462,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="whitePt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="whitePtToggleMobile" class="checkbox-sub-wine" data-subwine="whitePt">
-                                                    <label class="icon-sub-wine-nav whitePt-icon" for="whitePtToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="whitePtToggleMobile">PORTUGAL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="whitePtToggleMobile" class="checkbox-sub-wine" data-wineSection="white" data-subwine="whitePt">
+                                                        <label class="icon-sub-wine-nav whitePt-icon" for="whitePtToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="whitePtToggleMobile">PORTUGAL</label>
+                                                    </div>
                                                     <table id="whitePtMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2197,7 +2557,8 @@
                                         </div>
                                 </li>
                                 <li class="" id="roseRow">
-                                    <input type="checkbox"
+                                    <div class="wine-list-mobile-tittle-nav">
+                                        <input type="checkbox"
                                             id="roseToggle"
                                             class="checkbox-wine"
                                             data-wine="rose">
@@ -2205,14 +2566,17 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="roseToggle">ROSÉS</label>
+                                    </div>
                                         <div id="roseMobile" class="rose-wine-mobile wine-list-section hidden">
                                             <ul id="roseWineMobile" class="sub-wine-list-nav">
                                                 <li data-subnav="roseAr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="roseArToggleMobile" class="checkbox-sub-wine" data-subwine="roseAr">
-                                                    <label class="icon-sub-wine-nav roseAr-icon" for="roseArToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="roseArToggleMobile">ARGENTINA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="roseArToggleMobile" class="checkbox-sub-wine" data-wineSection="rose" data-subwine="roseAr">
+                                                        <label class="icon-sub-wine-nav roseAr-icon" for="roseArToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="roseArToggleMobile">ARGENTINA</label>
+                                                    </div>
                                                     <table id="roseArMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2242,11 +2606,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="roseCl" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="roseClToggleMobile" class="checkbox-sub-wine" data-subwine="roseCl">
-                                                    <label class="icon-sub-wine-nav roseCl-icon" for="roseClToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="roseClToggleMobile">CHILE</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="roseClToggleMobile" class="checkbox-sub-wine" data-wineSection="rose" data-subwine="roseCl">
+                                                        <label class="icon-sub-wine-nav roseCl-icon" for="roseClToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="roseClToggleMobile">CHILE</label>
+                                                    </div>
                                                     <table id="roseClMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2270,11 +2636,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="roseFr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="roseFrToggleMobile" class="checkbox-sub-wine" data-subwine="roseFr">
-                                                    <label class="icon-sub-wine-nav roseFr-icon" for="roseFrToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="roseFrToggleMobile">FRANÇA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="roseFrToggleMobile" class="checkbox-sub-wine" data-wineSection="rose" data-subwine="roseFr">
+                                                        <label class="icon-sub-wine-nav roseFr-icon" for="roseFrToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="roseFrToggleMobile">FRANÇA</label>
+                                                    </div>
                                                     <table id="roseFrMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2368,11 +2736,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="roseIt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="roseItToggleMobile" class="checkbox-sub-wine" data-subwine="roseIt">
-                                                    <label class="icon-sub-wine-nav roseIt-icon" for="roseItToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="roseItToggleMobile">ITÁLIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="roseItToggleMobile" class="checkbox-sub-wine" data-wineSection="rose" data-subwine="roseIt">
+                                                        <label class="icon-sub-wine-nav roseIt-icon" for="roseItToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="roseItToggleMobile">ITÁLIA</label>
+                                                    </div>
                                                     <table id="roseItMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2418,11 +2788,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="rosePt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="rosePtToggleMobile" class="checkbox-sub-wine" data-subwine="rosePt">
-                                                    <label class="icon-sub-wine-nav rosePt-icon" for="rosePtToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="rosePtToggleMobile">PORTUGAL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="rosePtToggleMobile" class="checkbox-sub-wine" data-wineSection="rose" data-subwine="rosePt">
+                                                        <label class="icon-sub-wine-nav rosePt-icon" for="rosePtToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="rosePtToggleMobile">PORTUGAL</label>
+                                                    </div>
                                                     <table id="rosePtMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2447,6 +2819,7 @@
                                         </div>
                                 </li>
                                 <li class="" id="redRow">
+                                    <div class="wine-list-mobile-tittle-nav">
                                     <input type="checkbox"
                                             id="redToggle"
                                             class="checkbox-wine"
@@ -2455,14 +2828,17 @@
                                             <i class="fa-solid fa-chevron-up"></i>
                                         </label>
                                         <label class="text-wine-nav" for="redToggle">TINTOS</label>
+                                    </div>
                                         <div id="redMobile" class="red-wine-mobile wine-list-section hidden">
                                             <ul id="redWineMobile" class="sub-wine-list-nav">
                                                 <li data-subnav="redAr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redArToggleMobile" class="checkbox-sub-wine" data-subwine="redAr">
-                                                    <label class="icon-sub-wine-nav redAr-icon" for="redArToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redArToggleMobile">ARGENTINA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redArToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redAr">
+                                                        <label class="icon-sub-wine-nav redAr-icon" for="redArToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redArToggleMobile">ARGENTINA</label>
+                                                    </div>
                                                     <table id="redArMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2787,11 +3163,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redBr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redBrToggleMobile" class="checkbox-sub-wine" data-subwine="redBr">
-                                                    <label class="icon-sub-wine-nav redBr-icon" for="redBrToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redBrToggleMobile">BRASIL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redBrToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redBr">
+                                                        <label class="icon-sub-wine-nav redBr-icon" for="redBrToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redBrToggleMobile">BRASIL</label>
+                                                    </div>
                                                     <table id="redBrMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -2821,11 +3199,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redCl" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redClToggleMobile" class="checkbox-sub-wine" data-subwine="redCl">
-                                                    <label class="icon-sub-wine-nav redCl-icon" for="redClToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redClToggleMobile">CHILE</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redClToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redCl">
+                                                        <label class="icon-sub-wine-nav redCl-icon" for="redClToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redClToggleMobile">CHILE</label>
+                                                    </div>
                                                     <table id="redClMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3063,11 +3443,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redEs" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redEsToggleMobile" class="checkbox-sub-wine" data-subwine="redEs">
-                                                    <label class="icon-sub-wine-nav redEs-icon" for="redEsToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redEsToggleMobile">ESPANHA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redEsToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redEs">
+                                                        <label class="icon-sub-wine-nav redEs-icon" for="redEsToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redEsToggleMobile">ESPANHA</label>
+                                                    </div>
                                                     <table id="redEsMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3233,11 +3615,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redUs" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redUsToggleMobile" class="checkbox-sub-wine" data-subwine="redUs">
-                                                    <label class="icon-sub-wine-nav redUs-icon" for="redUsToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redUsToggleMobile">ESTADOS UNIDOS</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redUsToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redUs">
+                                                        <label class="icon-sub-wine-nav redUs-icon" for="redUsToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redUsToggleMobile">ESTADOS UNIDOS</label>
+                                                    </div>
                                                     <table id="redUsMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3307,11 +3691,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redFr" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redFrToggleMobile" class="checkbox-sub-wine" data-subwine="redFr">
-                                                    <label class="icon-sub-wine-nav redFr-icon" for="redFrToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redFrToggleMobile">FRANÇA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redFrToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redFr">
+                                                        <label class="icon-sub-wine-nav redFr-icon" for="redFrToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redFrToggleMobile">FRANÇA</label>
+                                                    </div>
                                                     <table id="redFrMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3493,11 +3879,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redIt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redItToggleMobile" class="checkbox-sub-wine" data-subwine="redIt">
-                                                    <label class="icon-sub-wine-nav redIt-icon" for="redItToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redItToggleMobile">ITÁLIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redItToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redIt">
+                                                        <label class="icon-sub-wine-nav redIt-icon" for="redItToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redItToggleMobile">ITÁLIA</label>
+                                                    </div>
                                                     <table id="redItMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3823,11 +4211,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redNz" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redNzToggleMobile" class="checkbox-sub-wine" data-subwine="redNz">
-                                                    <label class="icon-sub-wine-nav redNz-icon" for="redNzToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redNzToggleMobile">NOVA ZELÂNDIA</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redNzToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redNz">
+                                                        <label class="icon-sub-wine-nav redNz-icon" for="redNzToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redNzToggleMobile">NOVA ZELÂNDIA</label>
+                                                    </div>
                                                     <table id="redNzMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -3857,11 +4247,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redPt" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redPtToggleMobile" class="checkbox-sub-wine" data-subwine="redPt">
-                                                    <label class="icon-sub-wine-nav redPt-icon" for="redPtToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redPtToggleMobile">PORTUGAL</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redPtToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redPt">
+                                                        <label class="icon-sub-wine-nav redPt-icon" for="redPtToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redPtToggleMobile">PORTUGAL</label>
+                                                    </div>
                                                     <table id="redPtMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -4048,11 +4440,13 @@
                                                     </table>
                                                 </li>
                                                 <li data-subnav="redUy" class="sub-wine-list-row">
-                                                    <input type="checkbox" id="redUyToggleMobile" class="checkbox-sub-wine" data-subwine="redUy">
-                                                    <label class="icon-sub-wine-nav redUy-icon" for="redUyToggleMobile">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </label>
-                                                    <label class="text-sub-wine-nav" for="redUyToggleMobile">URUGUAI</label>
+                                                    <div class="sub-wine-list-container-mobile">
+                                                        <input type="checkbox" id="redUyToggleMobile" class="checkbox-sub-wine" data-wineSection="red" data-subwine="redUy">
+                                                        <label class="icon-sub-wine-nav redUy-icon" for="redUyToggleMobile">
+                                                            <i class="fa-solid fa-chevron-up"></i>
+                                                        </label>
+                                                        <label class="text-sub-wine-nav" for="redUyToggleMobile">URUGUAI</label>
+                                                    </div>
                                                     <table id="redUyMobile" class="table-sub-nav hidden">
                                                         <thead>
                                                             <tr>
@@ -4109,7 +4503,6 @@
                                             </ul>
                                         </div>
                                 </li>
-                                
                             </ul>
                         </div>
                     </div>
