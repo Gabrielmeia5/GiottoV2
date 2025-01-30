@@ -2,105 +2,113 @@ let swiperInstance = null;
 let swiperSuggestionInstance = null;
 let swiperSuggestionDesktopInstance = null;
 let swiperAssessmentsInstance = null;
+let isMobile = null; // Estado para verificar se a tela é mobile ou desktop
+
+// Armazena referências aos elementos para evitar chamadas repetidas ao DOM
+const swiperSuggestionsEl = document.getElementById('swiperSuggestions');
+const swiperAssessmentsEl = document.getElementById('swiperAssessments');
 
 function handleScreenChange() {
-  if (window.innerWidth < 1024) {
-    // Destruir instâncias existentes
+  const newIsMobile = window.innerWidth < 1024;
+  if (newIsMobile === isMobile) return; // Evita recriação desnecessária
+  isMobile = newIsMobile;
+
+  if (isMobile) {
+    // Destruir instâncias existentes no modo desktop
     if (swiperSuggestionDesktopInstance) {
       swiperSuggestionDesktopInstance.destroy(true, true);
       swiperSuggestionDesktopInstance = null;
     }
+    if (swiperAssessmentsInstance) {
+      swiperAssessmentsInstance.destroy(true, true);
+      swiperAssessmentsInstance = null;
+    }
 
-    // Adicionar classe para mobile
-    document.getElementById('swiperSuggestions').classList.remove('swiper-suggestions-desktop');
-    document.getElementById('swiperSuggestions').classList.add('swiper-suggestions');
+    // Alternar classes para mobile
+    swiperSuggestionsEl.classList.remove('swiper-suggestions-desktop');
+    swiperSuggestionsEl.classList.add('swiper-suggestions');
+    swiperAssessmentsEl.classList.remove('swiper-assessments-desktop');
+    swiperAssessmentsEl.classList.add('swiper-assessments');
 
-    // Inicializar Swiper para mobile
+    // Inicializar Swipers para mobile
     if (!swiperSuggestionInstance) {
       swiperSuggestionInstance = new Swiper('.swiper-suggestions', {
         loop: false,
-        effect: 'fade', // Efeito de fade para mobile
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+        effect: 'fade',
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
       });
     }
+
+    if (!swiperAssessmentsInstance) {
+      swiperAssessmentsInstance = new Swiper('.swiper-assessments', {
+        loop: false,
+        effect: 'fade',
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      });
+    }
+
   } else {
-    // Destruir instâncias existentes
+    // Destruir instâncias existentes no modo mobile
     if (swiperSuggestionInstance) {
       swiperSuggestionInstance.destroy(true, true);
       swiperSuggestionInstance = null;
     }
+    if (swiperAssessmentsInstance) {
+      swiperAssessmentsInstance.destroy(true, true);
+      swiperAssessmentsInstance = null;
+    }
 
-    // Adicionar classe para desktop
-    document.getElementById('swiperSuggestions').classList.remove('swiper-suggestions');
-    document.getElementById('swiperSuggestions').classList.add('swiper-suggestions-desktop');
+    // Alternar classes para desktop
+    swiperSuggestionsEl.classList.remove('swiper-suggestions');
+    swiperSuggestionsEl.classList.add('swiper-suggestions-desktop');
+    swiperAssessmentsEl.classList.remove('swiper-assessments');
+    swiperAssessmentsEl.classList.add('swiper-assessments-desktop');
 
-    // Inicializar Swiper para desktop (sem efeito coverflow)
+    // Inicializar Swipers para desktop
     if (!swiperSuggestionDesktopInstance) {
       swiperSuggestionDesktopInstance = new Swiper('.swiper-suggestions-desktop', {
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 3, // Mostra 3 slides
-        loop: true, // Ativa o loop infinito
-        spaceBetween: 30, // Espaçamento entre os slides
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        // Removido o efeito coverflow
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 30,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      });
+    }
+
+    if (!swiperAssessmentsInstance) {
+      swiperAssessmentsInstance = new Swiper('.swiper-assessments-desktop', {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 30,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
       });
     }
   }
 }
 
+// Adiciona debounce para otimizar o evento resize
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(handleScreenChange, 200);
+});
+
 // Executa a função quando a página é carregada
 window.addEventListener('load', handleScreenChange);
-
-// Executa a função quando o tamanho da tela é alterado
-window.addEventListener('resize', handleScreenChange);
 
 export function swiperAdd() {
   swiperInstance = new Swiper('.swiper', {
     loop: true,
-    effect: 'fade', // Efeito de fade para o Swiper principal
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  swiperAssessmentsInstance = new Swiper('.swiper-assessments', {
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 3, // Mostra 3 slides
-    loop: true, // Ativa o loop infinito
-    spaceBetween: 30, // Espaçamento entre os slides
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // Removido o efeito coverflow
+    effect: 'fade',
+    autoplay: { delay: 7000, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
 }

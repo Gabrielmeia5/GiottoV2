@@ -1,188 +1,292 @@
-.assessments-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5em 0;
-    overflow-x: visible !important;
-}
 
 
-.assessment-title {
+  .assessment-title {
     font-size: 2.5em;
     color: var(--primary-color);
     font-weight: 500;
-    font-family: 'Great Vibes', cursive;
-
-}
-
-
-
-.text-assessment {
-    font-family: "Shadows Into Light Two", sans-serif;
-    color: var(--secondary-color);
-    width: 70vw;
-    margin-top: 1em;
-    font-size: .9rem;
-    letter-spacing: 0.02em;
-    line-height: 1.8em;
+    font-family: "Great Vibes", cursive;
+    margin-bottom: 1em;
     text-align: center;
 
-    margin-bottom: 1em;
-}
+  }
 
-.swiper-assessments {
-    width: 96vw;
+  .container-images-assessment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-assessment {
+      font-family: "Shadows Into Light Two", sans-serif;
+      color: var(--secondary-color);
+      width: 70%;
+      margin-top: 2em;
+      font-size: 0.9rem;
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 1em;
+  }
+
+  .swiper-assessments {
+    width: 90vw;
     height: fit-content;
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: .5em;
+    margin-top: 0.5em;
     border-radius: 1vw;
     position: relative;
-  
-    overflow-x: visible !important;
-  }
+    overflow: hidden;
+    }
 
-  .container-infos-assessments {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border-radius: 1vw;
-    background-color: var(--secondary-color-bg);
-    padding: 1.5em 0em;
     
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  }
 
-  .swiper-assessments .swiper-wrapper {
-    overflow-x: visible !important;
-  }
-  
-  .swiper-assessments .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .container-infos-assessments {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border-radius: 1vw;
+      background-color: var(--secondary-color-bg);
+      padding: 1.5em 0em;
+      
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .swiper-assessments .swiper-wrapper {
+      overflow-x: visible !important;
+    }
     
-    height: 100%; /* Ocupa 100% da altura do container */
+    .swiper-assessments .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      height: 100%; /* Ocupa 100% da altura do container */
+    }
+
+    .swiper-assessments .swiper-button-prev,
+    .swiper-assessments .swiper-button-next {
+      top: 40%;
+      color: white; /* Cor da seta */
+      background: transparent; /* Fundo branco semi-transparente */
+      border-radius: 50%; /* Torna a seta circular */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    
+    /* Adiciona transições suaves ao hover */
+    .swiper-assessments .swiper-button-prev:hover,
+    .swiper-assessments .swiper-button-next:hover {
+      transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+    
+    }
+    
+    /* Remove o estilo padrão de botões grandes */
+    .swiper-assessments .swiper-button-prev::after,
+    .swiper-assessments .swiper-button-next::after {
+      font-size: .8em; /* Diminui o tamanho da seta padrão do Swiper */
+      font-weight: bold; /* Torna a seta mais visível */
+    }
+    
+    .swiper-assessments .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.6;
+      width: .4em;
+      height: .4em;
+    }
+    
+    .swiper-assessments .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    .swiper-assessments .swiper-pagination {
+
+      z-index: 10; /* Garante que fique acima de outros elementos */
   }
 
-  .swiper-assessments .swiper-button-prev,
-  .swiper-assessments .swiper-button-next {
-    top: 40%;
-    color: white; /* Cor da seta */
-    background: transparent; /* Fundo branco semi-transparente */
-    border-radius: 50%; /* Torna a seta circular */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+
+  .container-plataform {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding-top: .5em;
+      padding-bottom: 1em;
   }
-  
 
-  
-  /* Adiciona transições suaves ao hover */
-  .swiper-assessments .swiper-button-prev:hover,
-  .swiper-assessments .swiper-button-next:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
-  
+  .plataform-icon {
+      width: 1.5em;
+      height: 1.5em;
+      margin-bottom: .5em;
+      padding: 0.1em;
+      border-radius: .5em;
+      border: 1px solid var(--primary-color);
+
   }
-  
-  /* Remove o estilo padrão de botões grandes */
-  .swiper-assessments .swiper-button-prev::after,
-  .swiper-assessments .swiper-button-next::after {
-    font-size: .8em; /* Diminui o tamanho da seta padrão do Swiper */
-    font-weight: bold; /* Torna a seta mais visível */
+
+  .plataform-user {
+      font-size: .9rem;
   }
-  
-  .swiper-assessments .swiper-pagination-bullet {
-    background: white;
-    opacity: 0.6;
-    width: .4em;
-    height: .4em;
+  .plataform-name {
+      font-size: .7rem;
+      color: var(--primary-color);
   }
-  
-  .swiper-assessments .swiper-pagination-bullet-active {
-    opacity: 1;
+
+  .star {
+      width: 1em;
+      height: 1em;
   }
-  .swiper-assessments .swiper-pagination {
-
-    z-index: 10; /* Garante que fique acima de outros elementos */
-}
 
 
 
 
+  @media screen and (max-width: 386px) {
+    .swiper-assessments .swiper-slide:not(.swiper-slide-active) {
+      visibility: hidden;
+    }
+  }
 
-.container-plataform {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding-top: .5em;
-    padding-bottom: 1em;
-}
+  @media screen and (min-width: 387px) and (max-width: 575px) {
+    .swiper-assessments .swiper-slide:not(.swiper-slide-active) {
+      visibility: hidden;
+    }
+  }
 
-.plataform-icon {
-    width: 1.5em;
-    height: 1.5em;
-    margin-bottom: .5em;
-    padding: 0.1em;
-    border-radius: .5em;
-    border: 1px solid var(--primary-color);
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .swiper-assessments .swiper-slide:not(.swiper-slide-active) {
+      visibility: hidden;
+    }
+  }
 
-}
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .swiper-assessments .swiper-slide:not(.swiper-slide-active) {
+      visibility: hidden;
+    }
+  }
 
-.plataform-user {
-    font-size: .9rem;
-}
-.plataform-name {
-    font-size: .7rem;
-    color: var(--primary-color);
-}
+  @media screen and (min-width: 1024px) {
+    .swiper-assessments {
+      display: none !important;
+    }
 
-.star {
-    width: 1em;
-    height: 1em;
-}
+    .swiper-assessments-desktop {
+      user-select: none;
+      width: 90vw;
+      height: 33vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5em;
+      border-radius: 1vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .swiper-assessments-desktop .swiper-wrapper {
+      overflow-x: visible;
+    }
+
+    .text-assessment {
+      margin: 0;
+      width: 100%;
+      padding: 1.5em;
+    }
+
+    .container-infos {
+      width: 30vw;
+    }
+
+    .swiper-assessments-desktop .swiper-slide {
+      overflow-x: visible !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      width: 30vw;
+      opacity: 1;
+      height: 100%;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+
+    .swiper-slide-next,
+    .swiper-slide-prev {
+      opacity: 0.2 !important;
+      transform: scale(0.9);
+    }
 
 
+    .swiper-assessments-desktop .swiper-button-prev,
+    .swiper-assessments-desktop .swiper-button-next {
+      top: 50%;
+      color: white;
+      background: transparent;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+  .swiper-assessments-desktop .swiper-button-prev:hover,
+    .swiper-assessments-desktop .swiper-button-next:hover {
+      transform: scale(1.1);
+    }
 
-@media screen and (max-width: 386px) {
+    .swiper-assessments-desktop .swiper-button-prev::after,
+  .swiper-assessments-desktop .swiper-button-next::after {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
 
-}
+  .swiper-assessments-desktop .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.6;
+    }
 
-@media screen and (min-width: 387px) and (max-width: 575px) {
+  .swiper-assessments-desktop .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
 
-}
+  .swiper-assessments-desktop .swiper-pagination {
+      top: 72%;
+    }
+  }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+  @media screen and (min-width: 1350px) {
+  .swiper-assessments-desktop .swiper-pagination {
+      top: 80%;
+    }
+    
 
-}
+  .text-assessment {
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 90%;
 
-}
+  }
 
-@media screen and (min-width: 1024px) {
+      
+
+    .swiper-assessments-desktop {
+
+      height: fit-content;
+
+    }
+  }
 
   
-
-.text-assessment {
-
-  width: 90%;
-
-}
-
-
-}
-
-@media screen and (min-width: 1350px) {
-
-}
