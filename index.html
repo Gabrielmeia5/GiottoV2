@@ -185,52 +185,9 @@
             <div data-animation-duration=".8s" class="suggestions-content hiddenLtoR">
                 <div class="container-images-suggestions">
                 
-                <div class="swiper-suggestions">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="container-infos">
-                                <div class="tittle-content-container">
-                                    <h3 class="title-suggestion">Lombo de bacalhau assado</h3>
-                                    <div class="styled-border"></div>
-                                </div>
-                                <img class="swiper-slide-img" src="./src/assets/sugestao 1.jpg" alt="Dish 1" class="suggestions-image">
-                                <p class="text-suggestion">Lombo de bacalhau assado com muito azeite, flor de
-                                    sal, legumes levemente tostados, alho confit e nosso
-                                    cremoso e aveludado Aligot
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="container-infos">
-                                <div class="tittle-content-container">
-                                    <h3 class="title-suggestion">Costeleta de Agnelo</h3>
-                                    <div class="styled-border"></div>
-                                </div>
-                                <img class="swiper-slide-img" src="./src/assets/sugestao 2.jpg" alt="Dish 1" class="suggestions-image">
-                                <p class="text-suggestion">Carré de cordeiro grelhado, creme de mandioquinha, farofa de bacon, molho pesto e raspa de limão siciliano.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="container-infos">
-                                <div class="tittle-content-container">
-                                    <h3 class="title-suggestion">Crochetta de Agnelo</h3>
-                                    <div class="styled-border"></div>
-                                </div>
-                                <img class="swiper-slide-img" src="./src/assets/sugestao 3.jpg" alt="Dish 1" class="suggestions-image">
-                                <p class="text-suggestion">Croquete de cordeiro cozido lentamente com vinho tinto. Acompanha molho Aioli.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Navigation arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- Pagination dots -->
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="body-suggestions">
-                    <div class="swiper-suggestions-desktop">
+
+
+                    <div id="swiperSuggestions" class="">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="container-infos">
@@ -285,7 +242,7 @@
                         <!-- Pagination dots -->
                         <div class="swiper-pagination"></div>
                     </div>
-                </div>
+
 
                 </div>
             </div>
@@ -4552,8 +4509,6 @@
 
             </div>
         </section>
-        
-        <!-- Overlay para a imagem em tela cheia -->
         <div id="overlay" class="overlay">
             <span id="close-btn" class="close-btn">&times;</span>
             <img id="full-image" class="full-image" src="" alt="Imagem em tela cheia">
@@ -4605,25 +4560,45 @@
                                     <p class="plataform-name">Google</p>
                                 </div>
                             </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="container-infos-assessments">
-                            <div class="container-starts">
-                                <img class="star" src="./src/assets/star.png" alt="">
-                                <img class="star" src="./src/assets/star.png" alt="">
-                                <img class="star" src="./src/assets/star.png" alt="">
-                                <img class="star" src="./src/assets/star.png" alt="">
-                                <img class="star" src="./src/assets/star.png" alt="">
-                            </div>
-                            <p class="text-assessment">“ A comida estava otima!!! Muito muito gostosa. Pedimos um Penne e uma parmegiana. Estavam divinos. Fomos muito bem tratados. Se vc esta em duvida entre o Rafael Magalhaes e o Giotto, por favor, nao perca tempo e escolha o Giotto. Obrigada pela experiência!!!!! “                                    
-                            </p>
-                            <div class="container-plataform">
-                                <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
-                                <p class="plataform-user">Ana Silva</p>
-                                <p class="plataform-name">Google</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-infos-assessments">
+                                <div class="container-starts">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                </div>
+                                <p class="text-assessment">“ A comida estava otima!!! Muito muito gostosa. Pedimos um Penne e uma parmegiana. Estavam divinos. Fomos muito bem tratados. Se vc esta em duvida entre o Rafael Magalhaes e o Giotto, por favor, nao perca tempo e escolha o Giotto. Obrigada pela experiência!!!!! “                                    
+                                </p>
+                                <div class="container-plataform">
+                                    <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
+                                    <p class="plataform-user">Ana Silva</p>
+                                    <p class="plataform-name">Google</p>
+                                </div>
                             </div>
                         </div>
-                </div>
+                        <div class="swiper-slide">
+                            <div class="container-infos-assessments">
+                                <div class="container-starts">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                    <img class="star" src="./src/assets/star.png" alt="">
+                                </div>
+                                <p class="text-assessment">“ A comida estava otima!!! Muito muito gostosa. Pedimos um Penne e uma parmegiana. Estavam divinos. Fomos muito bem tratados. Se vc esta em duvida entre o Rafael Magalhaes e o Giotto, por favor, nao perca tempo e escolha o Giotto. Obrigada pela experiência!!!!! “                                    
+                                </p>
+                                <div class="container-plataform">
+                                    <img class="plataform-icon" src="./src/assets/googleicon.png" alt="">
+                                    <p class="plataform-user">Ana Silva</p>
+                                    <p class="plataform-name">Google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Navigation arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

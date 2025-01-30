@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     margin: 5em 0;
+    overflow-x: visible !important;
 }
 
 
@@ -40,7 +41,8 @@
     margin-top: .5em;
     border-radius: 1vw;
     position: relative;
-    overflow: hidden;
+  
+    overflow-x: visible !important;
   }
 
   .container-infos-assessments {
@@ -53,16 +55,19 @@
     border-radius: 1vw;
     background-color: var(--secondary-color-bg);
     padding: 1.5em 0em;
+    
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 
-
+  .swiper-assessments .swiper-wrapper {
+    overflow-x: visible !important;
+  }
   
   .swiper-assessments .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    
     height: 100%; /* Ocupa 100% da altura do container */
   }
 
@@ -144,4 +149,40 @@
 .star {
     width: 1em;
     height: 1em;
+}
+
+
+
+
+@media screen and (max-width: 386px) {
+
+}
+
+@media screen and (min-width: 387px) and (max-width: 575px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  
+
+.text-assessment {
+
+  width: 90%;
+
+}
+
+
+}
+
+@media screen and (min-width: 1350px) {
+
 }

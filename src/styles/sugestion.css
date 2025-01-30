@@ -1,13 +1,13 @@
+/* ================================================== */
+/* Base Styles                                        */
+/* ================================================== */
+
 .suggestions-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 5em 0;
-}
-
-.swiper-suggestions-desktop {
-  display: none;
 }
 
 .suggestions-title {
@@ -32,11 +32,14 @@
   font-size: 0.9rem;
   font-weight: 200;
   text-align: center;
-  margin-top: 3em;
   margin-bottom: 1em;
 }
 
-.swiper-suggestions {
+/* ================================================== */
+/* Swiper Styles (Scoped to #suggestions)             */
+/* ================================================== */
+
+#suggestions .swiper-suggestions {
   width: 96vw;
   height: fit-content;
   display: flex;
@@ -49,7 +52,65 @@
   overflow: hidden;
 }
 
-.container-infos {
+#suggestions .swiper-suggestions .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+#suggestions .swiper-suggestions .swiper-slide img {
+  border-radius: 1vw;
+  width: 75vw;
+  height: 65vw;
+  object-fit: cover;
+}
+
+/* Swiper Navigation */
+#suggestions .swiper-suggestions .swiper-button-prev,
+#suggestions .swiper-suggestions .swiper-button-next {
+  top: 40%;
+  color: white;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#suggestions .swiper-suggestions .swiper-button-prev:hover,
+#suggestions .swiper-suggestions .swiper-button-next:hover {
+  transform: scale(1.1);
+}
+
+#suggestions .swiper-suggestions .swiper-button-prev::after,
+#suggestions .swiper-suggestions .swiper-button-next::after {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Swiper Pagination */
+#suggestions .swiper-suggestions .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+}
+
+#suggestions .swiper-suggestions .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+#suggestions .swiper-suggestions .swiper-pagination {
+  top: 65%;
+  z-index: 10;
+}
+
+/* ================================================== */
+/* Container Infos (Scoped to #suggestions)           */
+/* ================================================== */
+
+#suggestions .container-infos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,35 +122,11 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.swiper-suggestions .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-  height: 100%; /* Ocupa 100% da altura do container */
-}
+/* ================================================== */
+/* Title Content Container (Scoped to #suggestions)   */
+/* ================================================== */
 
-.swiper-suggestions .swiper-slide img {
-  border-radius: 1vw;
-  width: 75vw; /* Largura ajusta-se ao container */
-  height: 65vw; /* Altura ajusta-se ao container */
-  object-fit: cover; /* Corta o excesso para preencher o espaço */
-}
-
-.swiper-suggestions .swiper-button-prev,
-.swiper-suggestions .swiper-button-next {
-  top: 40%;
-  color: white; /* Cor da seta */
-  background: transparent; /* Fundo branco semi-transparente */
-  border-radius: 50%; /* Torna a seta circular */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Posiciona as setas fora da imagem */
-.tittle-content-container {
+#suggestions .tittle-content-container {
   margin-bottom: 2em;
   background-color: var(--primary-color-bg);
   width: 100%;
@@ -100,126 +137,99 @@
   text-align: center;
 }
 
-/* Adiciona transições suaves ao hover */
-.swiper-suggestions .swiper-button-prev:hover,
-.swiper-suggestions .swiper-button-next:hover {
-  transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
-}
+/* ================================================== */
+/* Styled Border (Scoped to #suggestions)             */
+/* ================================================== */
 
-/* Remove o estilo padrão de botões grandes */
-.swiper-suggestions .swiper-button-prev::after,
-.swiper-suggestions .swiper-button-next::after {
-  font-size: 1em; /* Diminui o tamanho da seta padrão do Swiper */
-  font-weight: bold; /* Torna a seta mais visível */
-}
-
-.swiper-suggestions .swiper-pagination-bullet {
-  background: white;
-  opacity: 0.6;
-}
-
-.swiper-suggestions .swiper-pagination-bullet-active {
-  opacity: 1;
-}
-#suggestions .swiper-suggestions .swiper-pagination {
-  top: 65%;
-  z-index: 10; /* Garante que fique acima de outros elementos */
-}
-
-.styled-border {
+#suggestions .styled-border {
   position: relative;
-  width: 100%; /* Largura do elemento */
-  height: 1px; /* Altura do elemento */
+  width: 100%;
+  height: 1px;
   background-color: var(--primary-color-bg);
 }
 
-.styled-border::before,
-.styled-border::after {
+#suggestions .styled-border::before,
+#suggestions .styled-border::after {
   content: "";
   position: absolute;
-  top: 0; /* Alinhadas no topo */
-  height: 1px; /* Altura da borda */
+  top: 0;
+  height: 1px;
   background-color: var(--primary-color);
-  width: 40%; /* Cada parte ocupa 30% do total */
+  width: 40%;
 }
 
-.styled-border::before {
-  left: 25%; /* Centraliza na metade esquerda */
+#suggestions .styled-border::before {
+  left: 25%;
   transform: translateX(-50%);
 }
 
-.styled-border::after {
-  right: 25%; /* Centraliza na metade direita */
+#suggestions .styled-border::after {
+  right: 25%;
   transform: translateX(50%);
 }
 
-/* Mobile (pequenos smartphones e celulares antigos) */
+/* ================================================== */
+/* Responsive Styles (Scoped to #suggestions)         */
+/* ================================================== */
+
 @media screen and (max-width: 386px) {
+  /* Mobile (pequenos smartphones e celulares antigos) */
 }
-/* Mobile */
+
 @media screen and (min-width: 387px) and (max-width: 575px) {
   #suggestions .swiper-suggestions .swiper-pagination {
     top: 75%;
-    z-index: 10; /* Garante que fique acima de outros elementos */
   }
 }
-/* Tablets pequenos */
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .swiper-suggestions {
+  #suggestions .swiper-suggestions {
     width: 75vw;
   }
 
-  .swiper-suggestions .swiper-slide img {
-    width: 50vw; /* Largura ajusta-se ao container */
-    height: 40vw; /* Altura ajusta-se ao container */
+  #suggestions .swiper-suggestions .swiper-slide img {
+    width: 50vw;
+    height: 40vw;
   }
 
   #suggestions .swiper-suggestions .swiper-pagination {
     top: 75%;
-    z-index: 10; /* Garante que fique acima de outros elementos */
   }
 
-  .text-suggestion {
+  #suggestions .text-suggestion {
     width: 50vw;
   }
 }
-/* Tablets e dispositivos médios */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .swiper-suggestions {
+  #suggestions .swiper-suggestions {
     width: 75vw;
   }
 
-  .swiper-suggestions .swiper-slide img {
-    width: 50vw; /* Largura ajusta-se ao container */
-    height: 40vw; /* Altura ajusta-se ao container */
+  #suggestions .swiper-suggestions .swiper-slide img {
+    width: 50vw;
+    height: 40vw;
   }
 
   #suggestions .swiper-suggestions .swiper-pagination {
     top: 80%;
-    z-index: 10; /* Garante que fique acima de outros elementos */
   }
 
-  .text-suggestion {
+  #suggestions .text-suggestion {
     width: 50vw;
   }
 }
 
+/* ================================================== */
+/* Desktop Styles (Scoped to #suggestions)            */
+/* ================================================== */
 
-
-
-
-
-
-
-
-/* Desktop padrão */
 @media screen and (min-width: 1024px) {
-
-  
-  .swiper-suggestions {
+  #suggestions .swiper-suggestions {
     display: none !important;
   }
-  .swiper-suggestions-desktop {
+
+  #suggestions .swiper-suggestions-desktop {
     user-select: none;
     width: 90vw;
     height: fit-content;
@@ -232,115 +242,89 @@
     position: relative;
     overflow: hidden;
   }
-  .swiper-suggestions-desktop .swiper-wrapper{
+
+  #suggestions .swiper-suggestions-desktop .swiper-wrapper {
     overflow-x: visible;
   }
-  
-  .text-suggestion {
+
+  #suggestions .text-suggestion {
     margin: 0;
     width: 100%;
     padding: 1.5em;
   }
 
-  .container-infos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  #suggestions .container-infos {
     width: 30vw;
-    border-radius: 1vw;
-    background-color: var(--secondary-color-bg);
-    padding-bottom: 0.2em;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
-  
-  .swiper-suggestions-desktop .swiper-slide {
+
+  #suggestions .swiper-suggestions-desktop .swiper-slide {
     overflow-x: visible !important;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
     width: 30vw;
-    opacity: 1; /* Imagem central completamente visível */
-    height: 100%; /* Ocupa 100% da altura do container */
+    opacity: 1;
+    height: 100%;
     transition: transform 0.4s ease, opacity 0.4s ease;
   }
-  .swiper-slide-active {
 
-    opacity: 1; /* Imagem central completamente visível */
+  #suggestions .swiper-slide-active {
+    opacity: 1;
   }
-  .swiper-slide-next,
-    .swiper-slide-prev {
-      opacity: 0.2 !important; /* Imagens laterais meio transparentes */
-      transform: scale(0.9); /* Imagens laterais levemente menores */
-    }
 
-   
-  .swiper-suggestions-desktop .swiper-slide img {
+  #suggestions .swiper-slide-next,
+  #suggestions .swiper-slide-prev {
+    opacity: 0.2 !important;
+    transform: scale(0.9);
+  }
+
+  #suggestions .swiper-suggestions-desktop .swiper-slide img {
     border-radius: 1vw;
-    width: 27vw; /* Largura ajusta-se ao container */
-    height: 22vw; /* Altura ajusta-se ao container */
-    object-fit: cover; /* Corta o excesso para preencher o espaço */
+    width: 27vw;
+    height: 22vw;
+    object-fit: cover;
   }
-  
-  .swiper-suggestions-desktop .swiper-button-prev,
-  .swiper-suggestions-desktop .swiper-button-next {
+
+  #suggestions .swiper-suggestions-desktop .swiper-button-prev,
+  #suggestions .swiper-suggestions-desktop .swiper-button-next {
     top: 50%;
-    color: white; /* Cor da seta */
-    background: transparent; /* Fundo branco semi-transparente */
-    border-radius: 50%; /* Torna a seta circular */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    color: white;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  /* Posiciona as setas fora da imagem */
-  .tittle-content-container {
-    margin-bottom: 1em;
-    background-color: var(--primary-color-bg);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
+  #suggestions .swiper-suggestions-desktop .swiper-button-prev:hover,
+  #suggestions .swiper-suggestions-desktop .swiper-button-next:hover {
+    transform: scale(1.1);
   }
-  
-  /* Adiciona transições suaves ao hover */
-  .swiper-suggestions-desktop .swiper-button-prev:hover,
-  .swiper-suggestions-desktop .swiper-button-next:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+
+  #suggestions .swiper-suggestions-desktop .swiper-button-prev::after,
+  #suggestions .swiper-suggestions-desktop .swiper-button-next::after {
+    font-size: 1.2em;
+    font-weight: bold;
   }
-  
-  /* Remove o estilo padrão de botões grandes */
-  .swiper-suggestions-desktop .swiper-button-prev::after,
-  .swiper-suggestions-desktop .swiper-button-next::after {
-    font-size: 1.2em; /* Diminui o tamanho da seta padrão do Swiper */
-    font-weight: bold; /* Torna a seta mais visível */
-  }
-  
-  .swiper-suggestions-desktop .swiper-pagination-bullet {
+
+  #suggestions .swiper-suggestions-desktop .swiper-pagination-bullet {
     background: white;
     opacity: 0.6;
   }
-  
-  .swiper-suggestions-desktop .swiper-pagination-bullet-active {
+
+  #suggestions .swiper-suggestions-desktop .swiper-pagination-bullet-active {
     opacity: 1;
   }
+
   #suggestions .swiper-suggestions-desktop .swiper-pagination {
     top: 72%;
-    z-index: 10; /* Garante que fique acima de outros elementos */
   }
-
-  
 }
-
-
 
 @media screen and (min-width: 1350px) {
   #suggestions .swiper-suggestions-desktop .swiper-pagination {
     top: 80%;
-  
   }
 }
